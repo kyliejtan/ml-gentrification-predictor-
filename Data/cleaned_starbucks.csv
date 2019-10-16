@@ -1,0 +1,99 @@
+business_zip,city,full_business_address,neighborhoods_analysis_boundaries,location,location_start_date,location_end_date,lic_code_description
+94105,San Francisco,299 Fremont St,Financial District/South Beach,,2019-03-11T00:00:00.000,,"Restaurant Less Than 1,000 Sqft"
+94105,San Francisco,687 Howard St,Financial District/South Beach,,1992-03-03T00:00:00.000,2019-05-16T00:00:00.000,Multiple
+94105,San Francisco,123 Mission St,Financial District/South Beach,,1992-03-03T00:00:00.000,2017-11-20T00:00:00.000,Multiple
+94103,San Francisco,675 Townsend,,"{'type': 'Point', 'coordinates': [-122.403105, 37.770669]}",2006-09-15T00:00:00.000,2019-05-16T00:00:00.000,"Restaurant 1,000 - 2,000 Sqft"
+94105,San Francisco,687 Howard St,,"{'type': 'Point', 'coordinates': [-122.400049, 37.785348]}",2000-10-28T00:00:00.000,2017-05-04T00:00:00.000,
+94115,San Francisco,2675 Geary Blvd E104,Lone Mountain/USF,,2017-02-23T00:00:00.000,2019-01-07T00:00:00.000,"Restaurant 1,000 - 2,000 Sqft"
+94102,San Francisco,201 Powell St,Tenderloin,"{'type': 'Point', 'coordinates': [-122.408132, 37.786818]}",2001-09-29T00:00:00.000,2019-01-21T00:00:00.000,Multiple
+94103,San Francisco,1298 Howard St,South of Market,"{'type': 'Point', 'coordinates': [-122.412671, 37.775381]}",1998-11-05T00:00:00.000,2018-05-14T00:00:00.000,Take-Out Establishment
+94104,San Francisco,343 Sansome St,Financial District/South Beach,"{'type': 'Point', 'coordinates': [-122.401278, 37.793686]}",1992-03-03T00:00:00.000,2019-01-12T00:00:00.000,Multiple
+94105,San Francisco,101 First St,,,2018-11-05T00:00:00.000,,Take-Out Establishment
+94133,San Francisco,49 Jefferson St P,North Beach,,2018-04-30T00:00:00.000,,Multiple
+94108,San Francisco,66 Keanry St,,,2018-03-08T00:00:00.000,,Multiple
+94105,San Francisco,201 Mission St,Financial District/South Beach,,2017-09-25T00:00:00.000,,Multiple
+94108,San Francisco,580 California St 150,,,2017-04-27T00:00:00.000,,"Restaurant 1,000 - 2,000 Sqft"
+94103,San Francisco,865 Market St #324,,,2016-05-20T00:00:00.000,2017-04-01T00:00:00.000,
+94132,San Francisco,3251 20th Ave #216,,,2016-05-20T00:00:00.000,2017-05-04T00:00:00.000,
+94103,San Francisco,865 Market St Rm 324,South of Market,"{'type': 'Point', 'coordinates': [-122.406929, 37.784904]}",2016-05-20T00:00:00.000,2017-04-01T00:00:00.000,
+94132,San Francisco,3251 20th Ave Rm 216,Lakeshore,"{'type': 'Point', 'coordinates': [-122.475605, 37.727905]}",2016-05-20T00:00:00.000,2018-01-31T00:00:00.000,Retail Food Market W/food Prep. Lt 5001 Sqft
+94124,San Francisco,3801 3rd St 112,Bayview Hunters Point,"{'type': 'Point', 'coordinates': [-122.388003, 37.742163]}",2016-06-09T00:00:00.000,,Multiple
+94158,San Francisco,1375 3rd St,Mission Bay,"{'type': 'Point', 'coordinates': [-122.389427, 37.771291]}",2015-10-10T00:00:00.000,,Multiple
+94158,San Francisco,1449 3rd St,Mission Bay,"{'type': 'Point', 'coordinates': [-122.38948, 37.771829]}",1992-03-03T00:00:00.000,2015-09-27T00:00:00.000,
+94105,San Francisco,1 Market St Plz25a,Financial District/South Beach,"{'type': 'Point', 'coordinates': [-122.395302, 37.794096]}",2015-03-24T00:00:00.000,,Multiple
+94103,San Francisco,201 3rd St,Financial District/South Beach,"{'type': 'Point', 'coordinates': [-122.400085, 37.784695]}",2000-10-28T00:00:00.000,,Multiple
+94109,San Francisco,685 Beach St,Russian Hill,"{'type': 'Point', 'coordinates': [-122.419863, 37.806753]}",2014-07-10T00:00:00.000,,Multiple
+94105,San Francisco,564 Market St,,"{'type': 'Point', 'coordinates': [-122.400798, 37.789741]}",2014-07-31T00:00:00.000,2018-11-18T00:00:00.000,Multiple
+94104,San Francisco,100 Montgomery St,,"{'type': 'Point', 'coordinates': [-122.402243, 37.790259]}",2014-07-24T00:00:00.000,,Multiple
+94105,San Francisco,60 Spear St 700,Financial District/South Beach,"{'type': 'Point', 'coordinates': [-122.394399, 37.792789]}",2013-12-09T00:00:00.000,,
+94115,San Francisco,2201 Fillmore St,Pacific Heights,"{'type': 'Point', 'coordinates': [-122.434035, 37.789839]}",2012-10-22T00:00:00.000,2015-06-27T00:00:00.000,
+94105,San Francisco,100 1st St,,"{'type': 'Point', 'coordinates': [-122.397439, 37.789685]}",2012-09-20T00:00:00.000,,Multiple
+94111,San Francisco,Pier 1 The Embarcadero,,"{'type': 'Point', 'coordinates': [-117.136796, 32.6257]}",2012-03-08T00:00:00.000,,"Restaurant 1,000 - 2,000 Sqft"
+94158,San Francisco,1700 Owens St,,"{'type': 'Point', 'coordinates': [-122.393487, 37.767376]}",2008-05-15T00:00:00.000,,Multiple
+94129,San Francisco,One Letterman Dr Bldg C,,,2008-01-31T00:00:00.000,,
+94102,San Francisco,462 Powell St,Financial District/South Beach,"{'type': 'Point', 'coordinates': [-122.408561, 37.789174]}",2007-12-12T00:00:00.000,,Multiple
+94103,San Francisco,865 Market St,South of Market,"{'type': 'Point', 'coordinates': [-122.406929, 37.784904]}",2006-09-28T00:00:00.000,,Multiple
+94133,San Francisco,499 Bay St,North Beach,"{'type': 'Point', 'coordinates': [-122.414772, 37.805475]}",2006-07-21T00:00:00.000,,Multiple
+94103,San Francisco,7 Third St,Financial District/South Beach,"{'type': 'Point', 'coordinates': [-122.403428, 37.787454]}",2006-04-28T00:00:00.000,,Multiple
+94111,San Francisco,295 California St,Financial District/South Beach,"{'type': 'Point', 'coordinates': [-122.400274, 37.79318]}",2005-12-17T00:00:00.000,,Multiple
+94123,San Francisco,3735 Buchanan St,Marina,"{'type': 'Point', 'coordinates': [-122.433584, 37.804388]}",2005-12-17T00:00:00.000,,Multiple
+94111,San Francisco,425 Battery St,Chinatown,"{'type': 'Point', 'coordinates': [-122.400387, 37.795252]}",2005-07-02T00:00:00.000,,Multiple
+94107,San Francisco,280 King St,Mission Bay,"{'type': 'Point', 'coordinates': [-122.393683, 37.776805]}",2004-01-01T00:00:00.000,,Multiple
+94115,San Francisco,1501 Fillmore St,Western Addition,"{'type': 'Point', 'coordinates': [-122.432711, 37.783296]}",2004-03-18T00:00:00.000,,Multiple
+94103,San Francisco,350 Rhode Island,,"{'type': 'Point', 'coordinates': [-122.402745, 37.766063]}",2003-10-19T00:00:00.000,,Multiple
+94102,San Francisco,1390 Market St,Tenderloin,"{'type': 'Point', 'coordinates': [-122.417111, 37.776865]}",2003-09-20T00:00:00.000,,Multiple
+94109,San Francisco,680 Beach St,,"{'type': 'Point', 'coordinates': [-122.42044, 37.806686]}",2003-09-27T00:00:00.000,2014-07-03T00:00:00.000,
+94108,San Francisco,359 Grant Ave,Financial District/South Beach,"{'type': 'Point', 'coordinates': [-122.405513, 37.790293]}",2002-10-17T00:00:00.000,,Multiple
+94133,San Francisco,2801 Jones St 111,North Beach,"{'type': 'Point', 'coordinates': [-122.417296, 37.80728]}",2001-04-14T00:00:00.000,2018-11-05T00:00:00.000,Multiple
+94105,San Francisco,199 Fremont St,Financial District/South Beach,"{'type': 'Point', 'coordinates': [-122.395309, 37.789371]}",2001-02-12T00:00:00.000,,Multiple
+94132,San Francisco,3251 20th Ave 250f,Lakeshore,"{'type': 'Point', 'coordinates': [-122.475605, 37.727905]}",2000-09-16T00:00:00.000,,Multiple
+94111,San Francisco,1255 Battery St 600,Financial District/South Beach,"{'type': 'Point', 'coordinates': [-122.401907, 37.802853]}",2000-05-27T00:00:00.000,,Multiple
+94111,San Francisco,701 Battery St,,"{'type': 'Point', 'coordinates': [-122.400914, 37.797853]}",2000-01-01T00:00:00.000,,Multiple
+94105,San Francisco,1 Market St,,"{'type': 'Point', 'coordinates': [-122.395302, 37.794096]}",2000-01-01T00:00:00.000,2017-05-04T00:00:00.000,
+94114,San Francisco,4094 18th St,Castro/Upper Market,"{'type': 'Point', 'coordinates': [-122.434904, 37.760892]}",2000-01-01T00:00:00.000,,Multiple
+94111,San Francisco,565 Clay St,Chinatown,"{'type': 'Point', 'coordinates': [-122.402685, 37.794734]}",2000-01-01T00:00:00.000,,Multiple
+94111,San Francisco,398 Market St,Financial District/South Beach,"{'type': 'Point', 'coordinates': [-122.398338, 37.791694]}",2000-01-01T00:00:00.000,,Multiple
+94117,San Francisco,350 Parnassus Ave,,"{'type': 'Point', 'coordinates': [-122.455934, 37.764041]}",2000-01-01T00:00:00.000,,Multiple
+94105,San Francisco,333 Market St,Financial District/South Beach,"{'type': 'Point', 'coordinates': [-122.397791, 37.792119]}",2000-01-01T00:00:00.000,,Multiple
+94111,San Francisco,52 California St,Financial District/South Beach,"{'type': 'Point', 'coordinates': [-122.397445, 37.793586]}",2000-01-01T00:00:00.000,,Multiple
+94104,San Francisco,555 California St,Financial District/South Beach,"{'type': 'Point', 'coordinates': [-122.403858, 37.792715]}",2000-01-01T00:00:00.000,,Multiple
+94108,San Francisco,390 Sutter St,Financial District/South Beach,"{'type': 'Point', 'coordinates': [-122.406838, 37.789435]}",2000-02-26T00:00:00.000,,Multiple
+94104,San Francisco,44 Montgomery St,Financial District/South Beach,"{'type': 'Point', 'coordinates': [-122.402127, 37.789704]}",2000-01-04T00:00:00.000,,Multiple
+94102,San Francisco,222 Mason St,Tenderloin,"{'type': 'Point', 'coordinates': [-122.409575, 37.785613]}",1999-04-03T00:00:00.000,,Multiple
+94127,San Francisco,675 Portola Dr,West of Twin Peaks,"{'type': 'Point', 'coordinates': [-122.452875, 37.744822]}",1999-03-20T00:00:00.000,,Multiple
+94111,San Francisco,27 Drumm St,Financial District/South Beach,"{'type': 'Point', 'coordinates': [-122.396542, 37.794072]}",1999-02-15T00:00:00.000,,Multiple
+94105,San Francisco,455 Market St,,"{'type': 'Point', 'coordinates': [-122.39888, 37.791265]}",1998-12-12T00:00:00.000,,Multiple
+94122,San Francisco,1800 Irving St,Sunset/Parkside,"{'type': 'Point', 'coordinates': [-122.477377, 37.763564]}",1998-10-10T00:00:00.000,,Multiple
+94109,San Francisco,1560 Van Ness Ave,Nob Hill,"{'type': 'Point', 'coordinates': [-122.422172, 37.789974]}",1998-02-23T00:00:00.000,,Multiple
+94105,San Francisco,36 2nd St,Financial District/South Beach,"{'type': 'Point', 'coordinates': [-122.400805, 37.788793]}",1998-06-27T00:00:00.000,,Multiple
+94107,San Francisco,490 Brannan St,South of Market,"{'type': 'Point', 'coordinates': [-122.39628, 37.778525]}",1998-05-18T00:00:00.000,,Multiple
+94102,San Francisco,790 Market St,Financial District/South Beach,"{'type': 'Point', 'coordinates': [-122.405765, 37.785814]}",1998-05-02T00:00:00.000,,Multiple
+94110,San Francisco,2727 Mariposa St,Mission,"{'type': 'Point', 'coordinates': [-122.410575, 37.763027]}",2001-10-28T00:00:00.000,,Multiple
+94121,San Francisco,5455 Geary Blvd,Outer Richmond,"{'type': 'Point', 'coordinates': [-122.477824, 37.780336]}",1997-12-15T00:00:00.000,,Multiple
+94117,San Francisco,1799 Fulton St,Lone Mountain/USF,"{'type': 'Point', 'coordinates': [-122.446485, 37.77582]}",1997-07-26T00:00:00.000,,Multiple
+94102,San Francisco,140 Van Ness Ave,Tenderloin,"{'type': 'Point', 'coordinates': [-122.419559, 37.776977]}",1997-07-19T00:00:00.000,,Multiple
+94102,San Francisco,442 Geary St,Tenderloin,"{'type': 'Point', 'coordinates': [-122.410587, 37.787059]}",1997-07-05T00:00:00.000,,Multiple
+94105,San Francisco,123 Mission St,,"{'type': 'Point', 'coordinates': [-122.39462, 37.792099]}",1997-06-28T00:00:00.000,2017-11-20T00:00:00.000,"Restaurant Less Than 1,000 Sqft"
+94107,San Francisco,444 De Haro St Ste 218,Potrero Hill,"{'type': 'Point', 'coordinates': [-122.401555, 37.764194]}",2001-01-01T00:00:00.000,,
+94127,San Francisco,100 West Portal Ave,West of Twin Peaks,"{'type': 'Point', 'coordinates': [-122.467042, 37.739756]}",1996-07-28T00:00:00.000,,Multiple
+94103,San Francisco,1231 Market St,,"{'type': 'Point', 'coordinates': [-122.415275, 37.778313]}",1997-01-01T00:00:00.000,,Multiple
+94103,San Francisco,01 120  4th St,South of Market,"{'type': 'Point', 'coordinates': [-122.405883, 37.785718]}",2002-01-01T00:00:00.000,2017-05-04T00:00:00.000,
+94114,San Francisco,2020 Market St,,"{'type': 'Point', 'coordinates': [-122.427535, 37.768701]}",1997-11-11T00:00:00.000,2018-02-18T00:00:00.000,"Restaurant Less Than 1,000 Sqft"
+94105,San Francisco,340 Mission St,Financial District/South Beach,"{'type': 'Point', 'coordinates': [-122.395943, 37.791056]}",1997-04-15T00:00:00.000,2012-07-25T00:00:00.000,
+94111,San Francisco,505 Sansome St,,"{'type': 'Point', 'coordinates': [-122.401564, 37.795122]}",1996-12-14T00:00:00.000,2015-02-13T00:00:00.000,
+94115,San Francisco,1750 Divisadero St,,"{'type': 'Point', 'coordinates': [-122.439978, 37.785934]}",1996-10-26T00:00:00.000,,Multiple
+94118,San Francisco,3595 California St,Presidio Heights,"{'type': 'Point', 'coordinates': [-122.453255, 37.786403]}",1992-03-03T00:00:00.000,,Multiple
+94111,San Francisco,99 Jackson St,Financial District/South Beach,"{'type': 'Point', 'coordinates': [-122.397775, 37.79717]}",1992-03-03T00:00:00.000,,Multiple
+94103,San Francisco,120 4th St,,"{'type': 'Point', 'coordinates': [-122.40419, 37.784435]}",1995-08-10T00:00:00.000,,Multiple
+94105,San Francisco,201 Spear St,,"{'type': 'Point', 'coordinates': [-122.392069, 37.790953]}",1995-06-24T00:00:00.000,,Multiple
+94108,San Francisco,264 Kearny St,Financial District/South Beach,"{'type': 'Point', 'coordinates': [-122.404003, 37.790549]}",1995-03-04T00:00:00.000,,Multiple
+94122,San Francisco,744 Irving St,Inner Sunset,"{'type': 'Point', 'coordinates': [-122.465451, 37.76408]}",1995-02-11T00:00:00.000,,Multiple
+94105,San Francisco,74 New Montgomery St,Financial District/South Beach,"{'type': 'Point', 'coordinates': [-122.400989, 37.787866]}",1992-03-03T00:00:00.000,,Multiple
+94114,San Francisco,3995 24th St,Noe Valley,"{'type': 'Point', 'coordinates': [-122.431781, 37.75144]}",1993-06-25T00:00:00.000,,Multiple
+94104,San Francisco,369 Pine St,,"{'type': 'Point', 'coordinates': [-122.402015, 37.79197]}",1992-03-03T00:00:00.000,2003-12-02T00:00:00.000,
+94109,San Francisco,2163 Polk St,Russian Hill,"{'type': 'Point', 'coordinates': [-122.421931, 37.796646]}",1992-03-03T00:00:00.000,,Multiple
+94115,San Francisco,2222 Fillmore St,Pacific Heights,"{'type': 'Point', 'coordinates': [-122.434077, 37.790037]}",1992-03-03T00:00:00.000,,Multiple
+94123,San Francisco,2132 Chestnut St,Marina,"{'type': 'Point', 'coordinates': [-122.438576, 37.800517]}",1992-03-03T00:00:00.000,,Multiple
+94123,San Francisco,1899 Union St,Marina,"{'type': 'Point', 'coordinates': [-122.430569, 37.797727]}",1992-03-03T00:00:00.000,,Multiple
+94103,San Francisco,689 Townsend St,Mission Bay,,1992-03-03T00:00:00.000,,Multiple
+94114,San Francisco,2018 Market St,Castro/Upper Market,,1992-03-03T00:00:00.000,2018-02-19T00:00:00.000,Multiple

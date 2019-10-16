@@ -1,0 +1,38 @@
+/* remove default margin and padding from body */
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/* set map, body, and html to 100% of the screen size */
+#map,
+body,
+html {
+  height: 100%;
+}
+
+/* Styles for landing page */
+
+.wrapper {
+  position: relative;
+  min-height: 100%;
+  padding-bottom: 90px;
+  overflow: auto;
+}
+
+.carousel-inner {
+  position: relative;
+  overflow: auto;
+  height: 850px;
+  width: 100%;
+}
+
+.carousel img {
+  height: 700px;
+  width:auto;
+}
+
+#flowchart {
+  height: auto;
+  width: auto;
+}
