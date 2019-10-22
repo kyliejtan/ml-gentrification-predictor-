@@ -1,0 +1,249 @@
+business_zip,dba_name,ownership_name,city,full_business_address,neighborhoods_analysis_boundaries,location,location_start_date,location_end_date,lic_code_description
+94105,Starbucks Coffee#47903,Starbucks Corporation,San Francisco,299 Fremont St,Financial District/South Beach,,2019-03-11T00:00:00.000,,"Restaurant Less Than 1,000 Sqft"
+94105,Starbucks Coffee #5836,Starbucks Corporation,San Francisco,687 Howard St,Financial District/South Beach,,1992-03-03T00:00:00.000,2019-05-16T00:00:00.000,Multiple
+94105,Starbucks Coffee #5431,Starbucks Corporation,San Francisco,123 Mission St,Financial District/South Beach,,1992-03-03T00:00:00.000,2017-11-20T00:00:00.000,Multiple
+94103,Starbucks Coffee #11239,Starbucks Corporation,San Francisco,675 Townsend,,"{'type': 'Point', 'coordinates': [-122.403105, 37.770669]}",2006-09-15T00:00:00.000,2019-05-16T00:00:00.000,"Restaurant 1,000 - 2,000 Sqft"
+94105,Starbucks Coffee #5836,Starbucks Corporation,San Francisco,687 Howard St,,"{'type': 'Point', 'coordinates': [-122.400049, 37.785348]}",2000-10-28T00:00:00.000,2017-05-04T00:00:00.000,
+94115,Starbucks Coffee#28986,Starbucks Corporation,San Francisco,2675 Geary Blvd E104,Lone Mountain/USF,,2017-02-23T00:00:00.000,2019-01-07T00:00:00.000,"Restaurant 1,000 - 2,000 Sqft"
+94102,Starbucks Coffee #5992,Starbucks Corporation,San Francisco,201 Powell St,Tenderloin,"{'type': 'Point', 'coordinates': [-122.408132, 37.786818]}",2001-09-29T00:00:00.000,2019-01-21T00:00:00.000,Multiple
+94103,Starbucks Coffee #5585,Starbucks Corporation,San Francisco,1298 Howard St,South of Market,"{'type': 'Point', 'coordinates': [-122.412671, 37.775381]}",1998-11-05T00:00:00.000,2018-05-14T00:00:00.000,Take-Out Establishment
+94104,Starbucks Coffee,Starbucks Corporation,San Francisco,343 Sansome St,Financial District/South Beach,"{'type': 'Point', 'coordinates': [-122.401278, 37.793686]}",1992-03-03T00:00:00.000,2019-01-12T00:00:00.000,Multiple
+94103,Starbucks Coffee #11239,Starbucks Corporation,San Francisco,689 Townsend St,Mission Bay,,1992-03-03T00:00:00.000,,Multiple
+94114,Starbucks Coffee #5396,Starbucks Corporation,San Francisco,2018 Market St,Castro/Upper Market,,1992-03-03T00:00:00.000,2018-02-19T00:00:00.000,Multiple
+94105,Starbucks Coffee#55612,Starbucks Corporation,San Francisco,101 First St,,,2018-11-05T00:00:00.000,,Take-Out Establishment
+98134,Starbucks Corporation,Starbucks Corporation,Seattle,2401 Utah Ave,,,2018-01-01T00:00:00.000,,
+94133,Starbucks Coffee#54768/,Starbucks Corporation,San Francisco,49 Jefferson St P,North Beach,,2018-04-30T00:00:00.000,,Multiple
+94108,Starbucks Coffee#52861,Starbucks Corporation,San Francisco,66 Keanry St,,,2018-03-08T00:00:00.000,,Multiple
+94105,Starbucks Coffee#5431,Starbucks Corporation,San Francisco,201 Mission St,Financial District/South Beach,,2017-09-25T00:00:00.000,,Multiple
+94108,Starbucks Coffee#49304,Starbucks Corporation,San Francisco,580 California St 150,,,2017-04-27T00:00:00.000,,"Restaurant 1,000 - 2,000 Sqft"
+94103,Teavana,Starbucks Corporation,San Francisco,865 Market St #324,,,2016-05-20T00:00:00.000,2017-04-01T00:00:00.000,
+94132,Teavana,Starbucks Corporation,San Francisco,3251 20th Ave #216,,,2016-05-20T00:00:00.000,2017-05-04T00:00:00.000,
+94103,Teavana #28316,Starbucks Corporation,San Francisco,865 Market St Rm 324,South of Market,"{'type': 'Point', 'coordinates': [-122.406929, 37.784904]}",2016-05-20T00:00:00.000,2017-04-01T00:00:00.000,
+94132,Teavana #28323,Starbucks Corporation,San Francisco,3251 20th Ave Rm 216,Lakeshore,"{'type': 'Point', 'coordinates': [-122.475605, 37.727905]}",2016-05-20T00:00:00.000,2018-01-31T00:00:00.000,Retail Food Market W/food Prep. Lt 5001 Sqft
+94124,Starbucks Coffee#47471,Starbucks Corporation,San Francisco,3801 3rd St 112,Bayview Hunters Point,"{'type': 'Point', 'coordinates': [-122.388003, 37.742163]}",2016-06-09T00:00:00.000,,Multiple
+94158,Starbucks Coffee #25428,Starbucks Corporation,San Francisco,1375 3rd St,Mission Bay,"{'type': 'Point', 'coordinates': [-122.389427, 37.771291]}",2015-10-10T00:00:00.000,,Multiple
+94158,Starbucks Coffee #25428,Starbucks Corporation,San Francisco,1449 3rd St,Mission Bay,"{'type': 'Point', 'coordinates': [-122.38948, 37.771829]}",1992-03-03T00:00:00.000,2015-09-27T00:00:00.000,
+94105,Starbucks Coffee #9211,Starbucks Corporation,San Francisco,1 Market St Plz25a,Financial District/South Beach,"{'type': 'Point', 'coordinates': [-122.395302, 37.794096]}",2015-03-24T00:00:00.000,,Multiple
+94103,Starbucks Coffee #5836,Starbucks Corporation,San Francisco,201 3rd St,Financial District/South Beach,"{'type': 'Point', 'coordinates': [-122.400085, 37.784695]}",2000-10-28T00:00:00.000,,Multiple
+94109,Starbucks Coffee #6927,Starbucks Corporation,San Francisco,685 Beach St,Russian Hill,"{'type': 'Point', 'coordinates': [-122.419863, 37.806753]}",2014-07-10T00:00:00.000,,Multiple
+94105,Starbucks Coffee #22432,Starbucks Corporation,San Francisco,564 Market St,,"{'type': 'Point', 'coordinates': [-122.400798, 37.789741]}",2014-07-31T00:00:00.000,2018-11-18T00:00:00.000,Multiple
+94104,Starbucks Coffee #22607,Starbucks Corporation,San Francisco,100 Montgomery St,,"{'type': 'Point', 'coordinates': [-122.402243, 37.790259]}",2014-07-24T00:00:00.000,,Multiple
+94105,Starbucks Coffee #593,Starbucks Corporation,San Francisco,60 Spear St 700,Financial District/South Beach,"{'type': 'Point', 'coordinates': [-122.394399, 37.792789]}",2013-12-09T00:00:00.000,,
+94115,Evolution Fresh #17863,Starbucks Corporation,San Francisco,2201 Fillmore St,Pacific Heights,"{'type': 'Point', 'coordinates': [-122.434035, 37.789839]}",2012-10-22T00:00:00.000,2015-06-27T00:00:00.000,
+94105,Starbucks Coffee #17517,Starbucks Corporation,San Francisco,100 1st St,,"{'type': 'Point', 'coordinates': [-122.397439, 37.789685]}",2012-09-20T00:00:00.000,,Multiple
+94111,Starbucks Coffee #16839,Starbucks Corporation,San Francisco,Pier 1 The Embarcadero,,"{'type': 'Point', 'coordinates': [-117.136796, 32.6257]}",2012-03-08T00:00:00.000,,"Restaurant 1,000 - 2,000 Sqft"
+94158,Starbucks Coffee #14311,Starbucks Corporation,San Francisco,1700 Owens St,,"{'type': 'Point', 'coordinates': [-122.393487, 37.767376]}",2008-05-15T00:00:00.000,,Multiple
+94129,Starbucks Coffee #14540,Starbucks Corporation,San Francisco,One Letterman Dr Bldg C,,,2008-01-31T00:00:00.000,,
+94102,Starbucks Coffee #14393,Starbucks Corporation,San Francisco,462 Powell St,Financial District/South Beach,"{'type': 'Point', 'coordinates': [-122.408561, 37.789174]}",2007-12-12T00:00:00.000,,Multiple
+94103,Starbucks Coffee #10891,Starbucks Corporation,San Francisco,865 Market St,South of Market,"{'type': 'Point', 'coordinates': [-122.406929, 37.784904]}",2006-09-28T00:00:00.000,,Multiple
+94133,Starbucks Coffee #10892,Starbucks Corporation,San Francisco,499 Bay St,North Beach,"{'type': 'Point', 'coordinates': [-122.414772, 37.805475]}",2006-07-21T00:00:00.000,,Multiple
+94103,Starbucks Cofee #10347,Starbucks Corporation,San Francisco,7 Third St,Financial District/South Beach,"{'type': 'Point', 'coordinates': [-122.403428, 37.787454]}",2006-04-28T00:00:00.000,,Multiple
+94111,Starbucks Coffee #10251,Starbucks Corporation,San Francisco,295 California St,Financial District/South Beach,"{'type': 'Point', 'coordinates': [-122.400274, 37.79318]}",2005-12-17T00:00:00.000,,Multiple
+94123,Starbucks Coffee #10219,Starbucks Corporation,San Francisco,3735 Buchanan St,Marina,"{'type': 'Point', 'coordinates': [-122.433584, 37.804388]}",2005-12-17T00:00:00.000,,Multiple
+94111,Starbucks Coffee #9743,Starbucks Corporation,San Francisco,425 Battery St,Chinatown,"{'type': 'Point', 'coordinates': [-122.400387, 37.795252]}",2005-07-02T00:00:00.000,,Multiple
+94107,Starbucks Coffee #6677,Starbucks Corporation,San Francisco,280 King St,Mission Bay,"{'type': 'Point', 'coordinates': [-122.393683, 37.776805]}",2004-01-01T00:00:00.000,,Multiple
+94115,Starbucks Coffee #2997,Starbucks Corporation,San Francisco,1501 Fillmore St,Western Addition,"{'type': 'Point', 'coordinates': [-122.432711, 37.783296]}",2004-03-18T00:00:00.000,,Multiple
+94103,Starbucks Coffee #6867,Starbucks Corporation,San Francisco,350 Rhode Island,,"{'type': 'Point', 'coordinates': [-122.402745, 37.766063]}",2003-10-19T00:00:00.000,,Multiple
+94102,Starbucks Coffee #6937,Starbucks Corporation,San Francisco,1390 Market St,Tenderloin,"{'type': 'Point', 'coordinates': [-122.417111, 37.776865]}",2003-09-20T00:00:00.000,,Multiple
+94109,Starbucks Coffee #6927,Starbucks Corporation,San Francisco,680 Beach St,,"{'type': 'Point', 'coordinates': [-122.42044, 37.806686]}",2003-09-27T00:00:00.000,2014-07-03T00:00:00.000,
+94108,Starbucks Coffee #6765,Starbucks Corporation,San Francisco,359 Grant Ave,Financial District/South Beach,"{'type': 'Point', 'coordinates': [-122.405513, 37.790293]}",2002-10-17T00:00:00.000,,Multiple
+94133,Starbucks Coffee #5945,Starbucks Corporation,San Francisco,2801 Jones St 111,North Beach,"{'type': 'Point', 'coordinates': [-122.417296, 37.80728]}",2001-04-14T00:00:00.000,2018-11-05T00:00:00.000,Multiple
+94105,Starbucks Coffee #5852,Starbucks Corporation,San Francisco,199 Fremont St,Financial District/South Beach,"{'type': 'Point', 'coordinates': [-122.395309, 37.789371]}",2001-02-12T00:00:00.000,,Multiple
+94132,Starbucks Coffee #5851,Starbucks Corporation,San Francisco,3251 20th Ave 250f,Lakeshore,"{'type': 'Point', 'coordinates': [-122.475605, 37.727905]}",2000-09-16T00:00:00.000,,Multiple
+94111,Starbucks Coffee #5726,Starbucks Corporation,San Francisco,1255 Battery St 600,Financial District/South Beach,"{'type': 'Point', 'coordinates': [-122.401907, 37.802853]}",2000-05-27T00:00:00.000,,Multiple
+94111,Starbucks Coffee #9224,Starbucks Corporation,San Francisco,701 Battery St,,"{'type': 'Point', 'coordinates': [-122.400914, 37.797853]}",2000-01-01T00:00:00.000,,Multiple
+94105,Starbucks Coffee #9211,Starbucks Corporation,San Francisco,1 Market St,,"{'type': 'Point', 'coordinates': [-122.395302, 37.794096]}",2000-01-01T00:00:00.000,2017-05-04T00:00:00.000,
+94114,Starbucks Coffee #9212,Starbucks Corporation,San Francisco,4094 18th St,Castro/Upper Market,"{'type': 'Point', 'coordinates': [-122.434904, 37.760892]}",2000-01-01T00:00:00.000,,Multiple
+94111,Starbucks Coffee #9213,Starbucks Corporation,San Francisco,565 Clay St,Chinatown,"{'type': 'Point', 'coordinates': [-122.402685, 37.794734]}",2000-01-01T00:00:00.000,,Multiple
+94111,Starbucks Coffee #9216,Starbucks Corporation,San Francisco,398 Market St,Financial District/South Beach,"{'type': 'Point', 'coordinates': [-122.398338, 37.791694]}",2000-01-01T00:00:00.000,,Multiple
+94117,Starbucks Coffee #9215,Starbucks Corporation,San Francisco,350 Parnassus Ave,,"{'type': 'Point', 'coordinates': [-122.455934, 37.764041]}",2000-01-01T00:00:00.000,,Multiple
+94105,Starbucks Coffee #9219,Starbucks Corporation,San Francisco,333 Market St,Financial District/South Beach,"{'type': 'Point', 'coordinates': [-122.397791, 37.792119]}",2000-01-01T00:00:00.000,,Multiple
+94111,Starbucks Coffee #9222,Starbucks Corporation,San Francisco,52 California St,Financial District/South Beach,"{'type': 'Point', 'coordinates': [-122.397445, 37.793586]}",2000-01-01T00:00:00.000,,Multiple
+94104,Starbucks Coffee #9221,Starbucks Corporation,San Francisco,555 California St,Financial District/South Beach,"{'type': 'Point', 'coordinates': [-122.403858, 37.792715]}",2000-01-01T00:00:00.000,,Multiple
+94108,Starbucks Coffee #5757,Starbucks Corporation,San Francisco,390 Sutter St,Financial District/South Beach,"{'type': 'Point', 'coordinates': [-122.406838, 37.789435]}",2000-02-26T00:00:00.000,,Multiple
+94104,Starbucks Coffee #5752,Starbucks Corporation,San Francisco,44 Montgomery St,Financial District/South Beach,"{'type': 'Point', 'coordinates': [-122.402127, 37.789704]}",2000-01-04T00:00:00.000,,Multiple
+94102,Starbucks Coffee #5649,Starbucks Corporation,San Francisco,222 Mason St,Tenderloin,"{'type': 'Point', 'coordinates': [-122.409575, 37.785613]}",1999-04-03T00:00:00.000,,Multiple
+94127,Starbucks Coffee #5669,Starbucks Corporation,San Francisco,675 Portola Dr,West of Twin Peaks,"{'type': 'Point', 'coordinates': [-122.452875, 37.744822]}",1999-03-20T00:00:00.000,,Multiple
+94111,Starbucks Coffee #5625,Starbucks Corporation,San Francisco,27 Drumm St,Financial District/South Beach,"{'type': 'Point', 'coordinates': [-122.396542, 37.794072]}",1999-02-15T00:00:00.000,,Multiple
+94105,Starbucks Coffee #5646,Starbucks Corporation,San Francisco,455 Market St,,"{'type': 'Point', 'coordinates': [-122.39888, 37.791265]}",1998-12-12T00:00:00.000,,Multiple
+94122,Starbucks Coffee #5584,Starbucks Corporation,San Francisco,1800 Irving St,Sunset/Parkside,"{'type': 'Point', 'coordinates': [-122.477377, 37.763564]}",1998-10-10T00:00:00.000,,Multiple
+94109,Starbucks Coffee #5517,Starbucks Corporation,San Francisco,1560 Van Ness Ave,Nob Hill,"{'type': 'Point', 'coordinates': [-122.422172, 37.789974]}",1998-02-23T00:00:00.000,,Multiple
+94105,Starbucks Coffee #5486,Starbucks Corporation,San Francisco,36 2nd St,Financial District/South Beach,"{'type': 'Point', 'coordinates': [-122.400805, 37.788793]}",1998-06-27T00:00:00.000,,Multiple
+94107,Starbucks Coffee #5516,Starbucks Corporation,San Francisco,490 Brannan St,South of Market,"{'type': 'Point', 'coordinates': [-122.39628, 37.778525]}",1998-05-18T00:00:00.000,,Multiple
+94102,Starbucks Coffee #5464,Starbucks Corporation,San Francisco,790 Market St,Financial District/South Beach,"{'type': 'Point', 'coordinates': [-122.405765, 37.785814]}",1998-05-02T00:00:00.000,,Multiple
+94110,Starbucks Coffee #6605,Starbucks Corporation,San Francisco,2727 Mariposa St,Mission,"{'type': 'Point', 'coordinates': [-122.410575, 37.763027]}",2001-10-28T00:00:00.000,,Multiple
+94121,Starbucks Coffee #5510,Starbucks Corporation,San Francisco,5455 Geary Blvd,Outer Richmond,"{'type': 'Point', 'coordinates': [-122.477824, 37.780336]}",1997-12-15T00:00:00.000,,Multiple
+94117,Starbucks Coffee #5395,Starbucks Corporation,San Francisco,1799 Fulton St,Lone Mountain/USF,"{'type': 'Point', 'coordinates': [-122.446485, 37.77582]}",1997-07-26T00:00:00.000,,Multiple
+94102,Starbucks Coffee #5405,Starbucks Corporation,San Francisco,140 Van Ness Ave,Tenderloin,"{'type': 'Point', 'coordinates': [-122.419559, 37.776977]}",1997-07-19T00:00:00.000,,Multiple
+94102,Starbucks Coffee #5404,Starbucks Corporation,San Francisco,442 Geary St,Tenderloin,"{'type': 'Point', 'coordinates': [-122.410587, 37.787059]}",1997-07-05T00:00:00.000,,Multiple
+94105,Starbucks Coffee #5431,Starbucks Corporation,San Francisco,123 Mission St,,"{'type': 'Point', 'coordinates': [-122.39462, 37.792099]}",1997-06-28T00:00:00.000,2017-11-20T00:00:00.000,"Restaurant Less Than 1,000 Sqft"
+94107,Starbucks Coffee Company,Starbucks Corporation,San Francisco,444 De Haro St Ste 218,Potrero Hill,"{'type': 'Point', 'coordinates': [-122.401555, 37.764194]}",2001-01-01T00:00:00.000,,
+94127,Starbucks Coffee #5271,Starbucks Corporation,San Francisco,100 West Portal Ave,West of Twin Peaks,"{'type': 'Point', 'coordinates': [-122.467042, 37.739756]}",1996-07-28T00:00:00.000,,Multiple
+94103,Starbucks Coffee #5237,Starbucks Corporation,San Francisco,1231 Market St,,"{'type': 'Point', 'coordinates': [-122.415275, 37.778313]}",1997-01-01T00:00:00.000,,Multiple
+94103,Starbucks Coffee,Starbucks Corporation,San Francisco,01 120  4th St,South of Market,"{'type': 'Point', 'coordinates': [-122.405883, 37.785718]}",2002-01-01T00:00:00.000,2017-05-04T00:00:00.000,
+94114,Starbucks Coffee,Starbucks Corporation,San Francisco,2020 Market St,,"{'type': 'Point', 'coordinates': [-122.427535, 37.768701]}",1997-11-11T00:00:00.000,2018-02-18T00:00:00.000,"Restaurant Less Than 1,000 Sqft"
+94105,Starbucks Coffee,Starbucks Corporation,San Francisco,340 Mission St,Financial District/South Beach,"{'type': 'Point', 'coordinates': [-122.395943, 37.791056]}",1997-04-15T00:00:00.000,2012-07-25T00:00:00.000,
+94111,Starbucks Coffee,Starbucks Corporation,San Francisco,505 Sansome St,,"{'type': 'Point', 'coordinates': [-122.401564, 37.795122]}",1996-12-14T00:00:00.000,2015-02-13T00:00:00.000,
+94115,Starbucks Coffee,Starbucks Corporation,San Francisco,1750 Divisadero St,,"{'type': 'Point', 'coordinates': [-122.439978, 37.785934]}",1996-10-26T00:00:00.000,,Multiple
+94118,Starbucks Coffee,Starbucks Corporation,San Francisco,3595 California St,Presidio Heights,"{'type': 'Point', 'coordinates': [-122.453255, 37.786403]}",1992-03-03T00:00:00.000,,Multiple
+94111,Starbucks Coffee,Starbucks Corporation,San Francisco,99 Jackson St,Financial District/South Beach,"{'type': 'Point', 'coordinates': [-122.397775, 37.79717]}",1992-03-03T00:00:00.000,,Multiple
+94103,Starbucks Coffee,Starbucks Corporation,San Francisco,120 4th St,,"{'type': 'Point', 'coordinates': [-122.40419, 37.784435]}",1995-08-10T00:00:00.000,,Multiple
+94105,Starbucks Coffee,Starbucks Corporation,San Francisco,201 Spear St,,"{'type': 'Point', 'coordinates': [-122.392069, 37.790953]}",1995-06-24T00:00:00.000,,Multiple
+94108,Starbucks Coffee,Starbucks Corporation,San Francisco,264 Kearny St,Financial District/South Beach,"{'type': 'Point', 'coordinates': [-122.404003, 37.790549]}",1995-03-04T00:00:00.000,,Multiple
+94122,Starbucks Coffee,Starbucks Corporation,San Francisco,744 Irving St,Inner Sunset,"{'type': 'Point', 'coordinates': [-122.465451, 37.76408]}",1995-02-11T00:00:00.000,,Multiple
+94105,Starbucks Coffee,Starbucks Corporation,San Francisco,74 New Montgomery St,Financial District/South Beach,"{'type': 'Point', 'coordinates': [-122.400989, 37.787866]}",1992-03-03T00:00:00.000,,Multiple
+94114,Starbucks Coffee,Starbucks Corporation,San Francisco,3995 24th St,Noe Valley,"{'type': 'Point', 'coordinates': [-122.431781, 37.75144]}",1993-06-25T00:00:00.000,,Multiple
+94104,Starbucks Coffee,Starbucks Corporation,San Francisco,369 Pine St,,"{'type': 'Point', 'coordinates': [-122.402015, 37.79197]}",1992-03-03T00:00:00.000,2003-12-02T00:00:00.000,
+94109,Starbucks Coffee,Starbucks Corporation,San Francisco,2163 Polk St,Russian Hill,"{'type': 'Point', 'coordinates': [-122.421931, 37.796646]}",1992-03-03T00:00:00.000,,Multiple
+94115,Starbucks Coffee,Starbucks Corporation,San Francisco,2222 Fillmore St,Pacific Heights,"{'type': 'Point', 'coordinates': [-122.434077, 37.790037]}",1992-03-03T00:00:00.000,,Multiple
+94123,Starbucks Coffee,Starbucks Corporation,San Francisco,2132 Chestnut St,Marina,"{'type': 'Point', 'coordinates': [-122.438576, 37.800517]}",1992-03-03T00:00:00.000,,Multiple
+94123,Starbucks Coffee,Starbucks Corporation,San Francisco,1899 Union St,Marina,"{'type': 'Point', 'coordinates': [-122.430569, 37.797727]}",1992-03-03T00:00:00.000,,Multiple
+94111,Peet's Coffee And Tea Inc,Peet's Coffee & Tea Inc,San Francisco,Ferry Bldg The Embarcadero C3,,,2003-03-07T00:00:00.000,,Multiple
+94109,Peet's Coffee And Tea Inc,Peet's Coffee & Tea Inc,San Francisco,2139 Polk St #C,,"{'type': 'Point', 'coordinates': [-122.42191, 37.79654]}",1993-08-18T00:00:00.000,,Multiple
+94103,Peet's Coffee And Tea Inc,Peet's Coffee & Tea Inc,San Francisco,2300 16th St Ste 240,Mission,"{'type': 'Point', 'coordinates': [-122.410113, 37.765632]}",1996-08-16T00:00:00.000,,Multiple
+94104,Peet's Coffee And Tea Inc,Peet's Coffee & Tea Inc,San Francisco,217 Montgomery St,Financial District/South Beach,"{'type': 'Point', 'coordinates': [-122.40246, 37.791275]}",1997-08-01T00:00:00.000,2017-06-16T00:00:00.000,
+94105,Peet's Coffee And Tea Inc,Peet's Coffee & Tea Inc,San Francisco,101 2nd St,,"{'type': 'Point', 'coordinates': [-122.399452, 37.787733]}",2000-10-29T00:00:00.000,2018-05-20T00:00:00.000,Multiple
+94111,Peet's Coffee & Tea,Peet's Coffee & Tea Inc,San Francisco,2 Embarcadero Ctr #R2113,,,2005-05-23T00:00:00.000,,Multiple
+94102,Peet's Coffee & Tea,Peet's Coffee & Tea Inc,San Francisco,601 Van Ness Ave,Western Addition,"{'type': 'Point', 'coordinates': [-122.420616, 37.781471]}",2005-12-12T00:00:00.000,,Multiple
+94103,Peet's Coffee & Tea,Peet's Coffee & Tea Inc,San Francisco,680 Mission St,,"{'type': 'Point', 'coordinates': [-122.401767, 37.786481]}",2006-07-10T00:00:00.000,2018-04-18T00:00:00.000,"Restaurant Less Than 1,000 Sqft"
+94117,Peet's Coffee & Tea,Peet's Coffee & Tea Inc,San Francisco,310 Broderick St,Hayes Valley,"{'type': 'Point', 'coordinates': [-122.439119, 37.773024]}",2006-09-18T00:00:00.000,,Multiple
+94111,Peet's Coffee & Tea,Peet's Coffee & Tea Inc,San Francisco,1 California St,,"{'type': 'Point', 'coordinates': [-122.397317, 37.793534]}",2006-12-11T00:00:00.000,,Multiple
+94118,Peet's Coffee & Tea,Peet's Coffee & Tea Inc,San Francisco,5201 Geary Blvd,Outer Richmond,"{'type': 'Point', 'coordinates': [-122.475276, 37.780453]}",2006-11-27T00:00:00.000,,Multiple
+94132,Peet's Coffee & Tea,Peet's Coffee & Tea Inc,San Francisco,1509 Sloat Blvd,Sunset/Parkside,"{'type': 'Point', 'coordinates': [-122.489163, 37.734038]}",2012-09-26T00:00:00.000,,Multiple
+94103,Peet's Coffee & Tea,Peet's Coffee & Tea Inc,San Francisco,555 9th St #B5,,"{'type': 'Point', 'coordinates': [-122.407662, 37.770594]}",2007-12-03T00:00:00.000,,Multiple
+94109,Peet's Coffee & Tea,Peet's Coffee & Tea Inc,San Francisco,1400 Van Ness Ave,Nob Hill,"{'type': 'Point', 'coordinates': [-122.421908, 37.788633]}",2008-11-24T00:00:00.000,,Multiple
+94105,Peet's Coffee & Tea,Peet's Coffee & Tea Inc,San Francisco,595 Market St,,"{'type': 'Point', 'coordinates': [-122.400916, 37.789648]}",2008-11-17T00:00:00.000,,Multiple
+94608,Peet's Coffee And Tea Inc,Peet's Coffee & Tea Inc,Emeryville,1400 Park Ave,,"{'type': 'Point', 'coordinates': [-122.2876, 37.830843]}",2010-01-01T00:00:00.000,,Mobile Food Facility 5
+94108,Peet's Coffee & Tea,Peet's Coffee & Tea Inc,San Francisco,101 Post St,,"{'type': 'Point', 'coordinates': [-122.403893, 37.788865]}",2014-08-19T00:00:00.000,,Multiple
+94105,Peet's Coffee & Tea,Peet's Coffee & Tea Inc,San Francisco,337 Seawall Lot Lnd Area 1-1,,,2015-02-27T00:00:00.000,2016-02-14T00:00:00.000,
+94102,Peet's Coffee & Tea,Peet's Coffee & Tea Inc,San Francisco,773 Market St,,,2016-07-22T00:00:00.000,,Multiple
+94102,Peet's Coffee & Tea,Evans Brothers Cabinets,San Francisco,773 Market St,,,2016-08-01T00:00:00.000,2018-05-24T00:00:00.000,
+94103,Peet's Coffee & Tea,Peet's Coffee & Tea Inc,San Francisco,625 8th St B1,South of Market,,2019-04-11T00:00:00.000,,Multiple
+95838,Peet's Coffee,"California Sheet Metal, Inc.",Sacramento,3800 Pell Cir,,,2016-07-25T00:00:00.000,,Multiple
+94123,Peet's Coffee And Tea Inc,Peet's Coffee & Tea Inc,San Francisco,2156 Chestnut St,,"{'type': 'Point', 'coordinates': [-122.438913, 37.800474]}",1989-01-01T00:00:00.000,2013-05-31T00:00:00.000,
+94127,Peet's Coffee And Tea Inc,Peet's Coffee & Tea Inc,San Francisco,54 West Portal Ave,West of Twin Peaks,"{'type': 'Point', 'coordinates': [-122.466578, 37.740177]}",1989-01-01T00:00:00.000,,Multiple
+94114,Peet's Coffee And Tea Inc,Peet's Coffee & Tea Inc,San Francisco,2257 Market St,Castro/Upper Market,"{'type': 'Point', 'coordinates': [-122.432007, 37.764979]}",1992-01-10T00:00:00.000,,Multiple
+94104,Peet's Coffee And Tea,Peet's Coffee & Tea Inc,San Francisco,155 Montgomery St,Financial District/South Beach,,2017-04-17T00:00:00.000,,Multiple
+94103,Peet's Coffee And Tea Inc,Peet's Coffee & Tea Inc,San Francisco,855 Brannan St,South of Market,,2018-05-11T00:00:00.000,2018-05-31T00:00:00.000,Multiple
+94105,Peet's Coffee And Tea Inc,Peet's Coffee & Tea Inc,San Francisco,595 Mission St,Financial District/South Beach,"{'type': 'Point', 'coordinates': [-122.399703, 37.788081]}",2002-01-01T00:00:00.000,,Multiple
+94111,Peet's Coffee And Tea Inc,Peet's Coffee & Tea Inc,San Francisco,22 Battery St,,"{'type': 'Point', 'coordinates': [-122.399629, 37.791547]}",1995-08-01T00:00:00.000,,Multiple
+94105,Peet's Coffee & Tea,Peet's Coffee & Tea Inc,San Francisco,405 Howard St,,"{'type': 'Point', 'coordinates': [-122.395477, 37.788955]}",2007-01-04T00:00:00.000,,Multiple
+94118,Peet's Coffee And Tea Inc,Peet's Coffee & Tea Inc,San Francisco,3419 California St,Presidio Heights,"{'type': 'Point', 'coordinates': [-122.45046, 37.786755]}",1989-01-01T00:00:00.000,,Multiple
+94115,Peet's Coffee And Tea Inc,Peet's Coffee & Tea Inc,San Francisco,2197 Fillmore St,Pacific Heights,"{'type': 'Point', 'coordinates': [-122.434031, 37.78982]}",1995-08-01T00:00:00.000,,Multiple
+94132,Peet's Coffee & Tea Inc,Peet's Coffee & Tea Inc,San Francisco,3251 20th Ave,Lakeshore,"{'type': 'Point', 'coordinates': [-122.475605, 37.727905]}",2013-06-24T00:00:00.000,,Multiple
+94117,Peet's Coffee And Tea Inc,Peet's Coffee & Tea Inc,San Francisco,919 Cole St,Haight Ashbury,"{'type': 'Point', 'coordinates': [-122.449934, 37.76564]}",2013-07-29T00:00:00.000,,Multiple
+94132,Peet's Coffee & Tea,Emmar Brands Corporation,San Francisco,1630 Holloway Ave,Lakeshore,"{'type': 'Point', 'coordinates': [-122.477631, 37.720868]}",2012-04-09T00:00:00.000,,"Restaurant Less Than 1,000 Sqft"
+94123,Peet's Coffee & Tea,Peet's Coffee & Tea Inc,San Francisco,2080 Chestnut St,Marina,"{'type': 'Point', 'coordinates': [-122.437864, 37.800607]}",2014-02-01T00:00:00.000,,Multiple
+94105,Peet's Coffee & Tea,Peet's Coffee & Tea Inc,San Francisco,121 Spear St,Financial District/South Beach,,2016-07-22T00:00:00.000,,Multiple
+94102,Peet's Coffee & Tea,Peet's Coffee & Tea,San Francisco,1400 Mission St Ste 130,South of Market,,2016-10-07T00:00:00.000,2016-10-07T00:00:00.000,Multiple
+94105,Peet's Coffee & Tea,Peet's Coffee & Tea Inc,San Francisco,692 Mission St,Financial District/South Beach,,2006-07-10T00:00:00.000,,Multiple
+94102,Peet's Coffee & Tea,Peet's Coffee & Tea Inc,San Francisco,1400 Mission St Ste 130,South of Market,,2018-01-01T00:00:00.000,,Multiple
+94110,Phil'z Coffee,Philz Coffee Inc,San Francisco,3101 24th St,Mission,"{'type': 'Point', 'coordinates': [-122.414084, 37.752505]}",2007-04-01T00:00:00.000,,Multiple
+94114,Phil'z Coffee,Philz Coffee Inc,San Francisco,4298 24th St,Noe Valley,"{'type': 'Point', 'coordinates': [-122.438524, 37.751028]}",2012-03-30T00:00:00.000,,Multiple
+94114,Phil'z Coffee,Philz Coffee Inc,San Francisco,4023 18th St,Castro/Upper Market,"{'type': 'Point', 'coordinates': [-122.433294, 37.760994]}",2007-08-01T00:00:00.000,2015-10-05T00:00:00.000,
+94110,Phil'z Coffee,Philz Coffee Inc,San Francisco,1300 Potrero Ave,Mission,"{'type': 'Point', 'coordinates': [-122.406211, 37.751148]}",2009-11-01T00:00:00.000,2015-02-28T00:00:00.000,
+94124,Phil'z Coffee,Philz Coffee Inc,San Francisco,301 Toland Street,Bayview Hunters Point,"{'type': 'Point', 'coordinates': [-122.397423, 37.745551]}",2012-04-01T00:00:00.000,2015-06-22T00:00:00.000,
+94102,Phil'z Coffee,Philz Coffee Inc,San Francisco,399 Golden Gate Ave,Tenderloin,"{'type': 'Point', 'coordinates': [-122.416884, 37.781482]}",2013-02-01T00:00:00.000,,Multiple
+94109,Phil'z Coffee,Philz Coffee Inc,San Francisco,2234 Polk St,,,2019-06-10T00:00:00.000,,
+94111,Phil'z Coffee,Philz Coffee Inc,San Francisco,1 Front St,,"{'type': 'Point', 'coordinates': [-122.398473, 37.791868]}",2015-03-10T00:00:00.000,,Multiple
+94111,Phil'z Coffee,Philz Coffee Inc,San Francisco,5 Embarcadero Ctr,,"{'type': 'Point', 'coordinates': [-122.396158, 37.795106]}",2015-06-02T00:00:00.000,,Multiple
+,Phil'z Coffee,Philz Coffee Inc,San Francisco,1258 Minnesota St,Potrero Hill,"{'type': 'Point', 'coordinates': [-122.389903, 37.754289]}",2015-02-01T00:00:00.000,,Multiple
+94158,Phil'z Coffee,Philz Coffee Inc,San Francisco,201 Berry St,Mission Bay,"{'type': 'Point', 'coordinates': [-122.391601, 37.777184]}",2007-04-01T00:00:00.000,,Multiple
+94114,Phil'z Coffee,Philz Coffee Inc,San Francisco,549 Castro St,Castro/Upper Market,"{'type': 'Point', 'coordinates': [-122.434916, 37.760068]}",2015-04-23T00:00:00.000,,Multiple
+94103,Phil'z Coffee,Philz Coffee Inc,San Francisco,1775 17th St,Potrero Hill,"{'type': 'Point', 'coordinates': [-122.401616, 37.764886]}",2015-04-23T00:00:00.000,,Multiple
+94112,Phil'z Coffee,Philz Coffee Inc,San Francisco,1100 Ocean Ave,West of Twin Peaks,"{'type': 'Point', 'coordinates': [-122.45412, 37.72345]}",2016-05-31T00:00:00.000,2016-06-26T00:00:00.000,
+94112,Phil'z Coffee,Philz Coffee Inc,San Francisco,1110 Ocean Ave,West of Twin Peaks,,2016-06-27T00:00:00.000,,Multiple
+94105,Phil'z Coffee,Philz Coffee Inc,San Francisco,300 Folsom St,Financial District/South Beach,"{'type': 'Point', 'coordinates': [-122.392895, 37.788565]}",2007-04-01T00:00:00.000,,Multiple
+94111,Blue Bottle Coffee,Blue Bottle Coffee Inc,San Francisco,1 Ferry Bldg North Arcade 56,,,2015-11-20T00:00:00.000,,Multiple
+94607,Blue Bottle Coffee,Blue Bottle Coffee Inc,San Francisco,1 Ferry Bldg Mkt Place,,,2016-11-29T00:00:00.000,,Multiple
+94103,Blue Bottle Coffee,Blue Bottle Coffee Inc,San Francisco,705 Market St,Financial District/South Beach,,2019-09-10T00:00:00.000,,
+94111,Blue Bottle Coffee,Blue Bottle Coffee Llc,San Francisco,1 Ferry Bldg Plaza,,,2015-08-19T00:00:00.000,,Mobile Food Facility 4
+94103,Blue Bottle Coffee,Blue Bottle Coffee Inc,San Francisco,703 Market St,,,2019-08-09T00:00:00.000,,
+94111,Blue Bottle Ferry Building,Blue Bottle Ferry Building Llc,San Francisco,1 Ferry Bldg Mkt Place 7,,,2009-04-02T00:00:00.000,2016-12-28T00:00:00.000,
+94104,Blue Bottle Coffee,Blue Bottle Coffee Inc,San Francisco,199 Sutter St,,,2019-08-06T00:00:00.000,,
+94107,Blue Bottle Coffee,Blue Bottle Coffee Inc,San Francisco,2 South Park St,,"{'type': 'Point', 'coordinates': [-122.392981, 37.782359]}",2016-06-07T00:00:00.000,,Multiple
+94103,Blue Bottle Coffee,Blue Bottle Coffee Llc,San Francisco,1355 Market St #100,,"{'type': 'Point', 'coordinates': [-122.416681, 37.777203]}",2014-11-10T00:00:00.000,,Multiple
+94111,Blue Bottle Coffee Llc,Blue Bottle Coffee Llc,San Francisco,1 Ferry Bldg Plaza,,,2011-01-01T00:00:00.000,,
+94104,Blue Bottle Coffee,Blue Bottle Coffee Llc,San Francisco,115 Sansome St,,"{'type': 'Point', 'coordinates': [-122.400816, 37.791458]}",2014-11-10T00:00:00.000,,Multiple
+94103,Blue Bottle Coffee,Blue Bottle Coffee Llc,San Francisco,1 Mint Plz,South of Market,,2014-11-10T00:00:00.000,,Multiple
+94102,Blue Bottle Coffee Llc,Blue Bottle Coffee Llc,San Francisco,315 Linden St,Hayes Valley,"{'type': 'Point', 'coordinates': [-122.423131, 37.776396]}",2008-08-18T00:00:00.000,,Multiple
+94103,Blue Bottle Coffee Llc,Blue Bottle Coffee Llc,San Francisco,151 3rd St,Financial District/South Beach,"{'type': 'Point', 'coordinates': [-122.401139, 37.785539]}",2009-05-14T00:00:00.000,2013-06-02T00:00:00.000,
+94103,Blue Bottle Coffee Llc,Blue Bottle Coffee Llc,San Francisco,66 Mint St,South of Market,"{'type': 'Point', 'coordinates': [-122.407489, 37.782437]}",2010-01-01T00:00:00.000,,Multiple
+94110,Blue Bottle Coffee Llc,Blue Bottle Coffee Llc,San Francisco,550 Florida Street,Mission,"{'type': 'Point', 'coordinates': [-122.411189, 37.762488]}",2012-07-06T00:00:00.000,2016-10-17T00:00:00.000,
+94115,Blue Bottle Coffee,Blue Bottle Coffee Llc,San Francisco,2401 Jackson St,Pacific Heights,"{'type': 'Point', 'coordinates': [-122.434844, 37.792437]}",2015-10-21T00:00:00.000,2015-10-21T00:00:00.000,
+94113,Blue Bottle Coffee Inc,Blue Bottle Coffee Inc,San Francisco,909 Montgomery St Ste 105,North Beach,,2019-02-22T00:00:00.000,,
+94109,Blue Bottle Coffee,Blue Bottle Coffee Inc,San Francisco,628 California St,Chinatown,,2017-01-06T00:00:00.000,,Multiple
+94105,Blue Bottle Coffee,Blue Bottle Coffee Inc,San Francisco,168 2nd Street St,Financial District/South Beach,,2018-09-05T00:00:00.000,,Multiple
+94115,Blue Bottle Coffee,Blue Bottle Coffee Inc,San Francisco,2453 Fillmore St,Pacific Heights,"{'type': 'Point', 'coordinates': [-122.434514, 37.792185]}",2016-04-26T00:00:00.000,,Multiple
+94110,Sightglass Coffee,Sightglass Coffee Roasters Llc,San Francisco,3014 20th St,Mission,"{'type': 'Point', 'coordinates': [-122.410979, 37.759121]}",2016-01-01T00:00:00.000,,Multiple
+94103,Sightglass Coffee Roasters Llc,Sightglass Coffee Roasters Llc,San Francisco,270 7th St,South of Market,"{'type': 'Point', 'coordinates': [-122.408279, 37.777081]}",2009-10-01T00:00:00.000,,Multiple
+94110,Sightglass Coffee,Sightglass Coffee 20th St Llc,San Francisco,3014 20th St,,"{'type': 'Point', 'coordinates': [-122.410979, 37.759121]}",2014-02-01T00:00:00.000,2015-12-31T00:00:00.000,
+94103,Sightglass Coffee,Sightglass Coffee Roasters Llc,San Francisco,151 3rd St,Financial District/South Beach,"{'type': 'Point', 'coordinates': [-122.401139, 37.785539]}",2016-04-15T00:00:00.000,,Multiple
+94117,Sightglass Coffee,Sightglass Coffee Roasters Llc,San Francisco,301 Divisadero St,Haight Ashbury,,2016-08-12T00:00:00.000,,"Restaurant 1,000 - 2,000 Sqft"
+94110,Ritual Coffee Roasters,Ritual Coffee Roasters Inc,San Francisco,3141 17th St,,,2019-02-15T00:00:00.000,,
+94114,Ritual Coffee Roasters,Ritual Coffee Roasters Inc,San Francisco,2299 Market St A,Castro/Upper Market,,2017-05-08T00:00:00.000,,Multiple
+94117,Ritual Coffee Roasters,Ritual Coffee Roasters Inc,San Francisco,1300 Haight St,Haight Ashbury,"{'type': 'Point', 'coordinates': [-122.443956, 37.770378]}",2016-03-21T00:00:00.000,,"Restaurant Less Than 1,000 Sqft"
+94114,Ritual Coffee,Ritual Coffee Roasters Inc,San Francisco,2299 Market St Unit A,Castro/Upper Market,,2017-05-08T00:00:00.000,2017-06-09T00:00:00.000,
+94110,Ritual Coffee Roasters,Ritual Coffee Roasters Inc,San Francisco,1026 Valencia St,Mission,"{'type': 'Point', 'coordinates': [-122.421082, 37.756444]}",2008-01-01T00:00:00.000,,Multiple
+94103,Ritual Coffee Roasters,Ritual Coffee Roasters Inc,San Francisco,1050 Howard St,South of Market,"{'type': 'Point', 'coordinates': [-122.408401, 37.778752]}",2009-11-01T00:00:00.000,,
+94124,Ritual Coffee Roasters,Ritual Coffee Roasters Inc,San Francisco,1634 Jerrold Ave,Bayview Hunters Point,"{'type': 'Point', 'coordinates': [-122.390244, 37.739296]}",2009-01-01T00:00:00.000,,Multiple
+94102,Ritual Coffee Roasters,Ritual Coffee Roasters Inc,San Francisco,432 Octavia St,Hayes Valley,"{'type': 'Point', 'coordinates': [-122.424298, 37.776343]}",2011-05-12T00:00:00.000,,"Restaurant Less Than 1,000 Sqft"
+94103,Fourbarrel Coffee,Fourbarrel Coffee,San Francisco,375 Valencia St,Mission,"{'type': 'Point', 'coordinates': [-122.422088, 37.766975]}",2007-07-27T00:00:00.000,,"Restaurant Greater Than 2,000 Sqft"
+94134,Fourbarrel Coffee,Fourbarrel Coffee,San Francisco,2599 San Bruno Ave,Portola,"{'type': 'Point', 'coordinates': [-122.404136, 37.728906]}",2013-06-10T00:00:00.000,,
+94111,Fourbarrel Coffee,Fourbarrel Coffee,San Francisco,1 Columbus Ave,Chinatown,"{'type': 'Point', 'coordinates': [-122.403589, 37.795745]}",2015-06-01T00:00:00.000,2016-06-01T00:00:00.000,
+94122,Fourbarrel Coffee,Fourbarrel Coffee,San Francisco,1226 9th Ave,Inner Sunset,"{'type': 'Point', 'coordinates': [-122.4664, 37.765337]}",2015-06-01T00:00:00.000,2018-04-01T00:00:00.000,
+94117,The Mill,Fourbarrel Coffee,San Francisco,736 Divisadero St,Hayes Valley,"{'type': 'Point', 'coordinates': [-122.438046, 37.776408]}",2012-12-19T00:00:00.000,,Multiple
+94124,Trouble Coffee Company,Carrelli Jiulietta M,San Francisco,1730 Yosemite St,,"{'type': 'Point', 'coordinates': [-122.394106, 37.728236]}",2012-11-17T00:00:00.000,2017-07-04T00:00:00.000,"Restaurant Less Than 1,000 Sqft"
+94122,Trouble Coffee Company,Carrelli Jiulietta M,San Francisco,4033 Judah St,Sunset/Parkside,"{'type': 'Point', 'coordinates': [-122.505198, 37.760462]}",2007-06-25T00:00:00.000,,"Restaurant Less Than 1,000 Sqft"
+94105,Andytown Coffee Roasters,Andytown Llc,San Francisco,181 Fremont St,Financial District/South Beach,,2018-10-31T00:00:00.000,,"Restaurant 1,000 - 2,000 Sqft"
+94122,Andytown Coffee Roasters,Andytown Llc,San Francisco,3016 Taraval,,,2017-02-03T00:00:00.000,,Retail Food Market W/food Prep. Lt 5001 Sqft
+94116,Andytown Coffee Roasters,Andytown Llc,San Francisco,3629 Taraval,,,2017-02-03T00:00:00.000,,"Restaurant Less Than 1,000 Sqft"
+94122,Andytown Coffee Roasters,Andytown Llc,San Francisco,3655 Lawton St,Sunset/Parkside,"{'type': 'Point', 'coordinates': [-122.502115, 37.756838]}",2013-06-14T00:00:00.000,,"Restaurant Less Than 1,000 Sqft"
+94122,Snowbird Coffee,Brunmeda Llc,San Francisco,1352 9th Ave,Inner Sunset,"{'type': 'Point', 'coordinates': [-122.46624, 37.763074]}",2014-07-04T00:00:00.000,,"Restaurant Less Than 1,000 Sqft"
+94117,Flywheel Coffee Roasters,Flywheel Coffee Inc,San Francisco,672 Stanyan St,,,2016-07-01T00:00:00.000,,"Restaurant Less Than 1,000 Sqft"
+94117,Flywheel Coffee Roasters,Guerrero Aquiles,San Francisco,672 Stanyan St,Haight Ashbury,"{'type': 'Point', 'coordinates': [-122.453639, 37.769652]}",2012-04-17T00:00:00.000,2016-06-30T00:00:00.000,
+94118,Fifty/fifty,18 Grams Llc,San Francisco,3157 Geary Blvd,Lone Mountain/USF,"{'type': 'Point', 'coordinates': [-122.45273, 37.781718]}",2012-08-15T00:00:00.000,,
+94123,Wrecking Ball Coffee Roasters,Wrecking Ball Coffee Roasters,San Francisco,2271 Union St,,"{'type': 'Point', 'coordinates': [-122.436661, 37.796935]}",2014-09-05T00:00:00.000,,"Restaurant Less Than 1,000 Sqft"
+94121,Wrecking Ball Coffee Roasters,Wrecking Ball Coffee Roasters,San Francisco,426 45th Ave,Outer Richmond,"{'type': 'Point', 'coordinates': [-122.506282, 37.780467]}",2013-06-24T00:00:00.000,2014-09-05T00:00:00.000,
+94103,Wrecking Ball Coffee Roasters,Wrecking Ball Coffee Roasters,San Francisco,1580 Folsom St,Mission,,2018-09-01T00:00:00.000,,
+94107,Wrecking Ball Coffee Roasters,Wrecking Ball Coffee Roasters,San Francisco,88 Colin P. Kelly Junior St,Financial District/South Beach,,2018-09-01T00:00:00.000,,"Restaurant Less Than 1,000 Sqft"
+94116,Lady Falcon Coffee Club,Java Beach Coffee Roasters Inc,San Francisco,3620 Wawona St,Sunset/Parkside,"{'type': 'Point', 'coordinates': [-122.505743, 37.736132]}",2015-10-22T00:00:00.000,,
+94116,Lady Falcon Coffee Club,Java Beach Coffee Roasters Inc,San Francisco,3620 Wawona St,Sunset/Parkside,,2015-05-14T00:00:00.000,,Mobile Food Facility 4
+94103,Saint Frank Coffee,St Frank Coffee Llc,San Francisco,1081 Mission St,South of Market,,2017-05-31T00:00:00.000,,"Restaurant Less Than 1,000 Sqft"
+94109,Saint Frank Coffee,St Frank Coffee Llc,San Francisco,2340 Polk St,Russian Hill,"{'type': 'Point', 'coordinates': [-122.422279, 37.798424]}",2013-04-22T00:00:00.000,,"Restaurant Less Than 1,000 Sqft"
+94107,Linea Caffe,Linea Caffe Llc,San Francisco,1125 Mariposa St,Potrero Hill,,2019-03-31T00:00:00.000,,
+94110,Linea Caffe,Linea Caffe Llc,San Francisco,3417 18th St,Mission,"{'type': 'Point', 'coordinates': [-122.419756, 37.761807]}",2013-01-31T00:00:00.000,,"Restaurant Less Than 1,000 Sqft"
+94107,Linea Caffe Llc,Linea Caffe Llc,San Francisco,1125 Mariposa St,Potrero Hill,,2019-03-31T00:00:00.000,,
+94104,Coffee Cultures Inc,Coffee Cultures Inc,San Francisco,225 Bush St Ste 120,Financial District/South Beach,"{'type': 'Point', 'coordinates': [-122.401213, 37.791131]}",2013-06-24T00:00:00.000,2018-11-01T00:00:00.000,Take-Out Establishment
+94103,Coffee Cultures Soma,Coffee Cultures Soma,San Francisco,1301 Mission St,,,2016-03-16T00:00:00.000,,"Restaurant Greater Than 2,000 Sqft"
+94133,Beacon Coffee & Pantry,Curbside Pantry Llc,San Francisco,805 Columbus Ave,Russian Hill,"{'type': 'Point', 'coordinates': [-122.413109, 37.802327]}",2012-10-01T00:00:00.000,,Retail Food Market W/food Prep. Lt 5001 Sqft
+94133,Beacon Coffee Shop,Independent Plumbing Co Inc,San Francisco,807 Columbus St,,"{'type': 'Point', 'coordinates': [-122.413226, 37.802402]}",2014-09-10T00:00:00.000,2014-10-13T00:00:00.000,
+94103,Sextant Coffee Roaster,Ahmed Kinani A,San Francisco,1415 Folsom St,South of Market,"{'type': 'Point', 'coordinates': [-122.413057, 37.772637]}",2014-04-23T00:00:00.000,2010-12-31T00:00:00.000,
+94103,Sextant Coffee Roasters,Sextant Coffee Roasters,San Francisco,1415 Folsom St,,"{'type': 'Point', 'coordinates': [-122.413057, 37.772637]}",2015-01-01T00:00:00.000,,"Restaurant 1,000 - 2,000 Sqft"
+94102,Equator Coffees,"Equator Coffees, Llc",San Francisco,986 Market St,,,2017-08-01T00:00:00.000,,Take-Out Establishment
+94105,Equator Coffees & Teas,Equator Coffees & Teas Inc,San Francisco,222 2nd St,Financial District/South Beach,"{'type': 'Point', 'coordinates': [-122.398031, 37.786598]}",2016-06-14T00:00:00.000,2017-07-31T00:00:00.000,
+94102,Equator Coffees & Teas,Equator Coffees & Teas Inc,San Francisco,986 Market St,,"{'type': 'Point', 'coordinates': [-122.410037, 37.782443]}",2014-08-21T00:00:00.000,2017-07-31T00:00:00.000,
+94105,Equator Coffees,"Equator Coffees, Llc",San Francisco,222 2nd St,Financial District/South Beach,,2017-08-01T00:00:00.000,,"Restaurant Less Than 1,000 Sqft"
+94123,Equator Coffees,"Equator Coffees, Llc",San Francisco,2 Marina Blvd,Marina,,2017-08-01T00:00:00.000,,
+94901,Equator Coffees & Teas Inc,Equator Coffees & Teas Inc,San+rafael,115 Jordan St,,"{'type': 'Point', 'coordinates': [-122.52336, 37.965484]}",2010-02-01T00:00:00.000,2017-07-31T00:00:00.000,
+94133,Caffe Trieste,Caffe Trieste Inc,San Francisco,601 Vallejo St,North Beach,"{'type': 'Point', 'coordinates': [-122.407342, 37.798756]}",1991-01-01T00:00:00.000,,"Restaurant Less Than 1,000 Sqft"
+94133,Caffe Trieste Superb Coffees,Caffe Trieste Superb Coffe Inc,San Francisco,609 Vallejo St,North Beach,"{'type': 'Point', 'coordinates': [-122.407506, 37.798737]}",1992-01-01T00:00:00.000,,Multiple
+94103,Caffe Trieste,Sf Cafe Partners Llc,San Francisco,1667 Market St,Mission,"{'type': 'Point', 'coordinates': [-122.421267, 37.773445]}",2006-06-06T00:00:00.000,2018-06-30T00:00:00.000,
+94107,Caffe Trieste Superb Coffees,Caffe Trieste Superb Coffe Inc,San Francisco,1465 25th St,Bayview Hunters Point,"{'type': 'Point', 'coordinates': [-122.393226, 37.75251]}",1993-03-18T00:00:00.000,,Storage & Use Of Flammable Or Combustible Liquids
+94111,Chapel Hill Coffee Llc,Chapel Hill Coffee Llc,San Francisco,670 Commerical St Unit B,Chinatown,"{'type': 'Point', 'coordinates': [-122.40423, 37.794071]}",2014-11-01T00:00:00.000,,"Restaurant Less Than 1,000 Sqft"
+94102,Mazarine Coffee,Mazarine Coffee Llc,San Francisco,720 Market St,Financial District/South Beach,"{'type': 'Point', 'coordinates': [-122.403885, 37.787325]}",2014-05-27T00:00:00.000,,"Restaurant 1,000 - 2,000 Sqft"
+94105,La Capra Coffee,Hsm Coffee Llc,San Francisco,50 Fremont St 110,Financial District/South Beach,"{'type': 'Point', 'coordinates': [-122.3971, 37.790767]}",2014-09-08T00:00:00.000,,"Restaurant 1,000 - 2,000 Sqft"
+94107,La Capra Coffee,Shm Coffee Llc,San Francisco,360 3rd St Ste 101,South of Market,"{'type': 'Point', 'coordinates': [-122.398043, 37.783077]}",2015-04-27T00:00:00.000,,Multiple
+94107,Provender,Potrero Provender Llc,San Francisco,1415 18th St,,"{'type': 'Point', 'coordinates': [-122.39668, 37.762573]}",2015-02-26T00:00:00.000,2019-09-23T00:00:00.000,"Restaurant Less Than 1,000 Sqft"
+94107,Provender,Provender Llc,San Francisco,1415 18th St,,,2019-08-30T00:00:00.000,,
+94107,Provender Coffee,Provender Llc,San Francisco,1415 18th St,,,2019-08-30T00:00:00.000,2019-09-03T00:00:00.000,
+94107,Farleys,Hillyard Roger W,San Francisco,1315 18th St,Potrero Hill,"{'type': 'Point', 'coordinates': [-122.395981, 37.762614]}",1989-02-14T00:00:00.000,2011-05-31T00:00:00.000,
+94107,Reveille Coffee Co,Ever88 Llc,San Francisco,937 Harrison St,,,2017-06-27T00:00:00.000,2019-08-02T00:00:00.000,
+94107,Reveille Coffee Truck,New England Dough Boys Inc,San Francisco,937 Harrison St,,"{'type': 'Point', 'coordinates': [-122.402635, 37.778419]}",2010-04-15T00:00:00.000,2019-08-06T00:00:00.000,Mobile Food Facility 5
+94111,Reveille Coffee,Mr Lucky 0168 Llc,San Francisco,768 Sansome St,,,2019-08-02T00:00:00.000,,
+94107,Reveille Coffee,New England Dough Boys Inc,San Francisco,937 Harrison St,,"{'type': 'Point', 'coordinates': [-122.402635, 37.778419]}",2010-04-15T00:00:00.000,2019-08-06T00:00:00.000,
+94133,Reveille Coffee Co,New England Dough Boys Inc,San Francisco,200 Columbus Ave,North Beach,"{'type': 'Point', 'coordinates': [-122.406009, 37.797401]}",2012-08-24T00:00:00.000,2019-08-06T00:00:00.000,Multiple
+94114,Reveille Coffee Co,Mmnllc,San Francisco,4076 18th St,Castro/Upper Market,"{'type': 'Point', 'coordinates': [-122.434493, 37.76092]}",2013-12-11T00:00:00.000,,"Restaurant Less Than 1,000 Sqft"
+94107,Reveille Coffee Roasters,Shy Girl Llc,San Francisco,610 Long Bridge St,Mission Bay,,2015-05-21T00:00:00.000,,
+94133,Reveille Coffee,Mr Lucky 0168 Llc,San Francisco,200 Columbus Ave,North Beach,,2018-07-30T00:00:00.000,,
+94133,Caffe Puccini,Lucchesi Graziano,San Francisco,411 Columbus Ave,Chinatown,"{'type': 'Point', 'coordinates': [-122.408031, 37.798757]}",1991-08-09T00:00:00.000,2017-10-10T00:00:00.000,"Restaurant Less Than 1,000 Sqft"
