@@ -125,8 +125,32 @@ d3.json(`/base_polygons`, function(data) {
         },
         // When a feature (neighborhood) is clicked, it is enlarged to fit the screen
         click: function(event) {
-          let lat_lng = map.mouseEventToLatLng(event.originalEvent);
-          map.flyTo([lat_lng.lat, lat_lng.lng], 15);
+          var popLocation= event.latlng;
+          var popup = L.popup()
+          .setLatLng(popLocation)
+          .setContent('<form role="form" id="form" enctype="multipart/form-data" class = "form-horizontal" onsubmit="addMarker()">'+
+                        '<div class="form-group">'+
+                            '<label class="control-label col-sm-5"><strong>Percent 25 - 34: </strong></label>'+
+                            '<input type="number" min="0" class="form-control" id="pct_25_34" name="pct_25_34">'+
+                        '</div>'+
+                        '<div class="form-group">'+
+                            '<label class="control-label col-sm-5"><strong>Percent college educated: </strong></label>'+
+                            '<input type="number" min="0" class="form-control" id="pct_college_deg" name="pct_college_deg">'+
+                        '</div>'+
+                        '<div class="form-group">'+
+                            '<label class="control-label col-sm-5"><strong>Percent white: </strong></label>'+
+                            '<input type="number" min="0" class="form-control" id="pct_wht" name="pct_wht">'+
+                        '</div>'+
+                        '<div class="form-group">'+
+                            '<label class="control-label col-sm-5"><strong>Number of coffee shops: </strong></label>'+
+                            '<input type="number" min="0" class="form-control" id="num_coffee_shops" name="num_coffee_shops">'+
+                        '</div>'+
+                        '<div class="form-group">'+
+                          '<div style="text-align:center;" class="col-xs-4 col-xs-offset-2"><button type="button" class="btn">Cancel</button></div>'+
+                          '<div style="text-align:center;" class="col-xs-4"><button type="submit" value="submit" class="btn btn-primary trigger-submit">Submit</button></div>'+
+                        '</div>'+
+                        '</form>')
+          .openOn(map);
         }
       });
     }
