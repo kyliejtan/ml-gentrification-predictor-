@@ -22,7 +22,7 @@ app = Flask(__name__)
 db_uri = os.environ.get('DATABASE_URL')
 api_key = os.environ.get('API_KEY')
 
-app.config["SQLALCHEMY_DATABASE_URI"] = 'postgres://gaoafzhoycjoin:3e7bfe74080d2238fa6ef14ee67e403af421b3d7d5cb45f12aa5df5fdbf1968b@ec2-174-129-43-40.compute-1.amazonaws.com:5432/dfu7vggjmve1rn'
+app.config["SQLALCHEMY_DATABASE_URI"] = 'postgres://fammaobqzbflly:e32d1aa0abf664a50cae846d82c61500d67069725e2a0471e4a01b93f123a932@ec2-54-221-212-126.compute-1.amazonaws.com:5432/d4t5jnp7det55m'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 # # Binding the instance of flask_sqlalchemy.SQLAlchemy to this specific flask app
 db = SQLAlchemy(app)
@@ -38,15 +38,16 @@ Base = automap_base()
 Base.prepare(db.engine, reflect=True)
 #
 # # Save references to each table
-zipcode_neighborhoods = Base.classes.zipcode_neighborhoods
+# zipcode_neighborhoods = Base.classes.zipcode_neighborhoods
 zipcode_polygons = Base.classes.zipcode_polygons
-neighborhood_polygons = Base.classes.neighborhood_polygons
-zipcode_polygons = Base.classes.zipcode_polygons
-high_end_coffee_shops = Base.classes.high_end_coffee_shops
-coffee_shops = Base.classes.coffee_shops
-zillow_housing_data = Base.classes.zillow_housing_data
-neighborhood_coffee_counts = Base.classes.neighborhood_coffee_counts
-neighborhood_median_prices = Base.classes.neighborhood_median_prices
+complete_ml_data = Base.classes.complete_ml_data
+# neighborhood_polygons = Base.classes.neighborhood_polygons
+# zipcode_polygons = Base.classes.zipcode_polygons
+# high_end_coffee_shops = Base.classes.high_end_coffee_shops
+# coffee_shops = Base.classes.coffee_shops
+# zillow_housing_data = Base.classes.zillow_housing_data
+# neighborhood_coffee_counts = Base.classes.neighborhood_coffee_counts
+# neighborhood_median_prices = Base.classes.neighborhood_median_prices
 
 # Initializing the index route so that when visited, the html template,
 # index.html will be visited
@@ -56,51 +57,16 @@ def index():
     print("works up till here")
     return render_template("index.html")
 
-@app.route("/neighborhood_polygon_values")
-def neighborhood_polygon_values():
-    """Return a list of choropleth polygon weighting values."""
-
+@app.route("/base_polygons")
+def base_polygons():
     # Use Pandas to perform the sql query
-    sel = [neighborhood_polygons, neighborhood_median_prices.price, neighborhood_coffee_counts.coffee_shops]
+    sel = [zipcode_polygons, zipcode_neighborhoods, complete_ml_data]
     stmt = db.session.query(*sel).\
-                join(neighborhood_median_prices, neighborhood_polygons.features_properties_name
-                      == neighborhood_median_prices.neighborhood_name).\
-                join(neighborhood_coffee_counts, neighborhood_coffee_counts.neighborhood_name == neighborhood_median_prices.neighborhood_name).statement
-    df = pd.read_sql_query(stmt, db.session.bind)
-
-    # Building a JSON file out of neighborhood_mortgage_rate_df
-    choropleth_geojson_list = []
-    # Using a for loop to build each geojson feature
-    for row in df.iterrows():
-        features_type = row[1][1]
-        features_properties_link = row[1][2]
-        features_properties_name = row[1][3]
-        features_geometry_type = row[1][4]
-        features_geometry_coordinates = row[1][5]
-        features_properties_median_price = row[1][6]
-        features_properties_coffee_shops = row[1][7]
-
-        #
-        choropleth_geojson_list.append({'type': features_type, 'properties': {'link': features_properties_link, 'name': features_properties_name,
-              'MHP': features_properties_median_price, 'coffee_shops': features_properties_coffee_shops},
-              'geometry': {'type': features_geometry_type, 'coordinates': [[features_geometry_coordinates]]}})
-#
-    choropleth_geojson_dict = {'type': 'FeatureCollection', 'features': choropleth_geojson_list}
-
-    return jsonify(choropleth_geojson_dict)
-
-@app.route("/zipcode_polygon_values")
-def zipcode_polygon_values():
-    """Return a list of choropleth polygon weighting values."""
-
-    # Use Pandas to perform the sql query
-    sel = [zipcode_polygons, zipcode_neighborhoods, zillow_housing_data.zipcode, zillow_housing_data.price_96,
-           zillow_housing_data.price_14, zillow_housing_data.price_19]
-    stmt = db.session.query(*sel).\
-                join(zipcode_neighborhoods, zipcode_polygons.features_properties_name == zipcode_neighborhoods.zipcode).\
-                join(zillow_housing_data, zipcode_neighborhoods.zipcode == zillow_housing_data.zipcode).statement
-    df = pd.read_sql_query(stmt, db.session.bind)
-
+       join(zipcode_neighborhoods, zipcode_polygons.features_properties_name == zipcode_neighborhoods.zip_code).\
+       join(complete_ml_data, zipcode_neighborhoods.zip_code == complete_ml_data.zip_code).\
+       filter(complete_ml_data.year == 2017).\
+       statement
+    df = pd.read_sql_query(stmt, db.session.bind).reset_index(drop=True)
     # Building a JSON file out of neighborhood_mortgage_rate_df
     choropleth_geojson_list = []
     # Using a for loop to build each geojson feature
@@ -111,29 +77,24 @@ def zipcode_polygon_values():
         features_geometry_type = row[1][3]
         features_geometry_coordinates = row[1][4]
         neighborhoods = row[1][6]
-        coffee_shops = row[1][7]
-        price_96 = row[1][9]
-        price_14 = row[1][10]
-        price_19 = row[1][11]
-        if features_properties_name == '94111':
-            features_properties_rate_of_increase = ((price_19 - price_14) * 100)/price_14
-        else:
-            features_properties_rate_of_increase = ((price_19 - price_96) * 100)/price_96
-
+        pct_wht = row[1][12]
+        pct_25_34 = row[1][13]
+        pct_college_deg = row[1][14]
+        num_coffee_shops = row[1][15]
+        current_year_housing_price = row[1][16]
 
         choropleth_geojson_list.append({'type': features_type, 'properties': {'name': features_properties_name,
-                'HPPI': features_properties_rate_of_increase, 'neighborhoods': neighborhoods, 'coffee_shops': coffee_shops},
+                'current_year_housing_price': current_year_housing_price,
+                'neighborhoods': neighborhoods,
+                'num_coffee_shops': num_coffee_shops,
+                'pct_wht': pct_wht,
+                'pct_25_34': pct_25_34,
+                'pct_college_deg': pct_college_deg,
+                },
                 'geometry': {'type': features_geometry_type, 'coordinates': [[features_geometry_coordinates]]}})
 #
     choropleth_geojson_dict = {'type': 'FeatureCollection', 'features': choropleth_geojson_list}
-
     return jsonify(choropleth_geojson_dict)
-
-@app.route("/coffee_shop_locations")
-def coffee_shop_locations():
-    stmt = db.session.query("* FROM coffee_shops;").statement
-    df = pd.read_sql_query(stmt, db.session.bind)
-    return jsonify(df.to_dict(orient = "records"))
 
 if __name__ == "__main__":
     app.run()

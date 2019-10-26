@@ -1,4 +1,4 @@
-from Project2.app import db
+from Project3.app import db
 
 # db.drop_all()
 db.create_all()
