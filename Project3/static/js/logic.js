@@ -41,49 +41,43 @@ let selectionLegend = L.control({ position: "bottomright"});
 //     map.removeControl(neighborhoodPolyLegend);
 //     }
 // });
-// ///
-// function updateSelectionLegend(layer) {
-//   info.update(layer.feature.properties);
-// };
-//
-// let info = L.control({ position: "bottomright" });
-//
-// info.onAdd = function() {
-//   this._div = L.DomUtil.create('div', 'info');
-//   this.update();
-//   return this._div;
-// };
-//
-// info.update = function(layer) {
-//   if (layer) {
-//     if (layer.neighborhoods) {
-//       this._div.innerHTML = "<h2>" + layer.name + "</h2><hr><h3>House Price Increase (%): </h3><h6>"
-//       + Math.round(layer.current_year_housing_price) + "%</h6><h3>Neighborhoods: </h3>"
-//       for (let i = 0; i < layer.neighborhoods.length; i++) {
-//         this._div.innerHTML += "<h6>" + layer.neighborhoods[i] + "</h6>"
-//       }
-//       this._div.innerHTML += "<h3>Coffee Shops :</h3>"
-//       for (let i = 0; i < layer.coffee_shops.length; i++) {
-//         this._div.innerHTML += "<h6>" + layer.coffee_shops[i] + "</h6>"
-//       }
-//     }
-//     else {
-//       this._div.innerHTML = "<h2>" + layer.name + "</h2><hr><h3>Median House Price (USD): </h3><h6>$"
-//       + Math.round(layer.MHP) + "</h6><h3>Coffee Shops :</h3>"
-//       for (let i = 0; i < layer.coffee_shops.length; i++) {
-//         this._div.innerHTML += "<h6>" + layer.coffee_shops[i] + "</h6>"
-//       }
-//     }
-//   }
-// };
-//
-// info.addTo(map);
+///
+function updateSelectionLegend(layer) {
+  info.update(layer.feature.properties);
+};
+
+let info = L.control({ position: "bottomright" });
+
+info.onAdd = function() {
+  this._div = L.DomUtil.create('div', 'info');
+  this.update();
+  return this._div;
+};
+
+info.update = function(layer) {
+  if (layer) {
+    if (layer.neighborhoods) {
+      this._div.innerHTML = "<h2>"
+      + layer.name
+      + "</h2><hr><h3>Median House Price (USD): </h3><h6>$"
+      + Math.round(layer.current_year_housing_price)
+      + "</h6><h3>Coffee Shops :</h3>"
+      + "<h6>" + layer.num_coffee_shops + "</h6>"
+      + "</h6><h3>Neighborhoods: </h3>"
+      for (let i = 0; i < layer.neighborhoods.length; i++) {
+        this._div.innerHTML += "<h6>" + layer.neighborhoods[i] + "</h6>"
+      }
+      }
+    }
+};
+
+info.addTo(map);
 ////////////////////////////////////////////////////////////////////////////////
 
 ////////////////////////////////////////////////////////////////////////////////
 // Grab data with d3
 d3.json(`/base_polygons`, function(data) {
-
+  console.log(data);
   // Create a new choropleth layer
   zipcode_polygon_map = L.choropleth(data, {
 
@@ -157,6 +151,7 @@ d3.json(`/base_polygons`, function(data) {
   };
   // Adding legend to the map
   zipPolyLegend.addTo(map);
+  zipcode_polygon_map.addTo(map)
 });
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -164,5 +159,5 @@ d3.json(`/base_polygons`, function(data) {
 ////////////////////////////////////////////////////////////////////////////////
 let polygonOverlays = {"Zip Code Polygons": layers.ZIPCODE_POLYGONS};
 
-L.control.layers(polygonOverlays).addTo(map);
-L.control.layers(baseMaps, overlays).addTo(map);
+
+L.control.layers(baseMaps).addTo(map);

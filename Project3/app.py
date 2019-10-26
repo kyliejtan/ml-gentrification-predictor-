@@ -1,4 +1,5 @@
 # Importing dependencies
+import json
 import os
 import pandas as pd
 import numpy as np
@@ -38,7 +39,7 @@ Base = automap_base()
 Base.prepare(db.engine, reflect=True)
 #
 # # Save references to each table
-# zipcode_neighborhoods = Base.classes.zipcode_neighborhoods
+zipcode_neighborhoods = Base.classes.zipcode_neighborhoods
 zipcode_polygons = Base.classes.zipcode_polygons
 complete_ml_data = Base.classes.complete_ml_data
 # neighborhood_polygons = Base.classes.neighborhood_polygons
@@ -83,18 +84,22 @@ def base_polygons():
         num_coffee_shops = row[1][15]
         current_year_housing_price = row[1][16]
 
-        choropleth_geojson_list.append({'type': features_type, 'properties': {'name': features_properties_name,
+        choropleth_geojson_list.append({'type': features_type,
+            'geometry': {'type': features_geometry_type, 'coordinates': [[features_geometry_coordinates]]},
+                'properties': {'name': features_properties_name,
                 'current_year_housing_price': current_year_housing_price,
                 'neighborhoods': neighborhoods,
                 'num_coffee_shops': num_coffee_shops,
                 'pct_wht': pct_wht,
                 'pct_25_34': pct_25_34,
                 'pct_college_deg': pct_college_deg,
-                },
-                'geometry': {'type': features_geometry_type, 'coordinates': [[features_geometry_coordinates]]}})
+                }})
+
 #
     choropleth_geojson_dict = {'type': 'FeatureCollection', 'features': choropleth_geojson_list}
+    print(choropleth_geojson_dict)
     return jsonify(choropleth_geojson_dict)
+
 
 if __name__ == "__main__":
     app.run()
