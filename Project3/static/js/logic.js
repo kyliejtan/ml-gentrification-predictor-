@@ -61,6 +61,12 @@ info.update = function(layer) {
       + layer.name
       + "</h2><hr><h3>Median House Price (USD): </h3><h6>$"
       + Math.round(layer.current_year_housing_price)
+      + "</h6><h3>Percent age 25 - 34 :</h3>"
+      + "<h6>" + Math.round(layer.pct_25_34) + "</h6>"
+      + "</h6><h3>Percent with college degree :</h3>"
+      + "<h6>" + Math.round(layer.pct_college_deg) + "</h6>"
+      + "</h6><h3>Percent white :</h3>"
+      + "<h6>" + Math.round(layer.pct_wht) + "</h6>"
       + "</h6><h3>Coffee Shops :</h3>"
       + "<h6>" + layer.num_coffee_shops + "</h6>"
       + "</h6><h3>Neighborhoods: </h3>"
