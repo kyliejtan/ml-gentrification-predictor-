@@ -1,5 +1,6 @@
 // Initialize all of the LayerGroups we'll be using
 let layers = {ZIPCODE_POLYGONS: new L.LayerGroup()};
+
 // Define streetmap and darkmap layers
 let streetMap = L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}", {
   attribution: "Map data &copy; <a href=\"https://www.openstreetmap.org/\">OpenStreetMap</a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA</a>, Imagery © <a href=\"https://www.mapbox.com/\">Mapbox</a>",
@@ -27,6 +28,9 @@ let map = L.map("map", {
   zoom: 12,
   layers: [darkMap]
 });
+
+//create temp layer to store new features
+let featureGroup = L.featureGroup().addTo(map)
 
 let zipPolyLegend = L.control({ position: "bottomleft" });
 let selectionLegend = L.control({ position: "bottomright"});
@@ -83,7 +87,6 @@ info.addTo(map);
 ////////////////////////////////////////////////////////////////////////////////
 // Grab data with d3
 d3.json(`/base_polygons`, function(data) {
-  console.log(data);
   // Create a new choropleth layer
   zipcode_polygon_map = L.choropleth(data, {
 
@@ -107,7 +110,15 @@ d3.json(`/base_polygons`, function(data) {
 
     onEachFeature: function(feature, layer) {
       // Set mouse events to change map styling
+      let pct_25_34 = Math.round(layer.feature.properties.pct_25_34)
+      let pct_college_deg = Math.round(layer.feature.properties.pct_college_deg)
+      let pct_wht = Math.round(layer.feature.properties.pct_wht)
+      let num_coffee_shops = Math.round(layer.feature.properties.num_coffee_shops)
+      let current_year_housing_price = Math.round(layer.feature.properties.current_year_housing_price)
+      let newMarker
+
       layer.on({
+
         // When a user's mouse touches a map feature, the mouseover event calls this function, that feature's opacity changes to 90% so that it stands out
         mouseover: function(event) {
           layer = event.target;
@@ -124,33 +135,50 @@ d3.json(`/base_polygons`, function(data) {
           });
         },
         // When a feature (neighborhood) is clicked, it is enlarged to fit the screen
+
         click: function(event) {
-          var popLocation= event.latlng;
-          var popup = L.popup()
-          .setLatLng(popLocation)
-          .setContent('<form role="form" id="form" enctype="multipart/form-data" class = "form-horizontal" onsubmit="addMarker()">'+
+          layer = event.target
+          newMarker = new L.marker(event.latlng).addTo(map);
+          let popLocation= event.latlng;
+
+          // let popup = L.popup()
+          // .setLatLng(popLocation)
+          // .setContent
+
+          let popupContent = '<form role="form" id="form" enctype="multipart/form-data" class = "form-horizontal" onsubmit="addMarker()">'+
                         '<div class="form-group">'+
                             '<label class="control-label col-sm-5"><strong>Percent 25 - 34: </strong></label>'+
-                            '<input type="number" min="0" class="form-control" id="pct_25_34" name="pct_25_34">'+
+                            '<input type="number" min="0" value=' + '"' + pct_25_34 + '"' + 'class="form-control" id="pct_25_34" name="pct_25_34">'+
                         '</div>'+
                         '<div class="form-group">'+
                             '<label class="control-label col-sm-5"><strong>Percent college educated: </strong></label>'+
-                            '<input type="number" min="0" class="form-control" id="pct_college_deg" name="pct_college_deg">'+
+                            '<input type="number" min="0" value=' + '"' + pct_college_deg + '"' + 'class="form-control" id="pct_college_deg" name="pct_college_deg">'+
                         '</div>'+
                         '<div class="form-group">'+
                             '<label class="control-label col-sm-5"><strong>Percent white: </strong></label>'+
-                            '<input type="number" min="0" class="form-control" id="pct_wht" name="pct_wht">'+
+                            '<input type="number" min="0" value=' + '"' + pct_wht + '"' + 'class="form-control" id="pct_wht" name="pct_wht">'+
                         '</div>'+
                         '<div class="form-group">'+
                             '<label class="control-label col-sm-5"><strong>Number of coffee shops: </strong></label>'+
-                            '<input type="number" min="0" class="form-control" id="num_coffee_shops" name="num_coffee_shops">'+
+                            '<input type="number" min="0" value=' + '"' + num_coffee_shops + '"' + 'class="form-control" id="num_coffee_shops" name="num_coffee_shops">'+
+                        '</div>'+
+                        '<div class="form-group">'+
+                            '<label class="control-label col-sm-5"><strong>Median housing price: </strong></label>'+
+                            '<input type="number" min="0" value=' + '"' + current_year_housing_price + '"' + 'class="form-control" id="current_year_housing_price" name="current_year_housing_price">'+
                         '</div>'+
                         '<div class="form-group">'+
                           '<div style="text-align:center;" class="col-xs-4 col-xs-offset-2"><button type="button" class="btn">Cancel</button></div>'+
                           '<div style="text-align:center;" class="col-xs-4"><button type="submit" value="submit" class="btn btn-primary trigger-submit">Submit</button></div>'+
                         '</div>'+
-                        '</form>')
-          .openOn(map);
+                        '</form>'
+          newMarker.bindPopup(popupContent,{
+                      keepInView: true,
+                      closeButton: true
+                      }).openPopup();
+
+          $("#form").submit(function (event) {
+            event.preventDefault()
+          })
         }
       });
     }
