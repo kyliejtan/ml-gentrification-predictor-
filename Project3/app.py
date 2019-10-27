@@ -115,31 +115,37 @@ def base_polygons():
 
 #
     choropleth_geojson_dict = {'type': 'FeatureCollection', 'features': choropleth_geojson_list}
-    print(choropleth_geojson_dict)
     return jsonify(choropleth_geojson_dict)
 
 @app.route('/model', methods=["GET", "POST"])
-# def submit():
-#     form = modelForm()
-#     if form.validate_on_submit():
-#         return redirect('/success')
-#     return render_template('submit.html', form=form)
 def predict():
+    model = joblib.load('../models/without_hist_scaled_model.pkl')
     error = None
     if request.method == 'POST':
-        pct_25_34 = request.form['pct_25_34']
-        pct_college_deg = request.form['pct_college_deg']
-        pct_wht = request.form['pct_wht']
-        num_coffee_shops = request.form['num_coffee_shops']
-        current_year_housing_price = request.form['current_year_housing_price']
+        user_input =  request.form
+        pct_25_34 = float(request.form['pct_25_34'])
+        pct_college_deg = float(request.form['pct_college_deg'])
+        pct_wht = float(request.form['pct_wht'])
+        num_coffee_shops = float(request.form['num_coffee_shops'])
+        current_year_housing_price = float(request.form['current_year_housing_price'])
+        print("POST request successful")
+        print(type(pct_25_34))
+
     else:
         error = 'Invalid Credentials. Please try again.'
+        print("POST request failure")
 
-    input_values = (pct_25_34, pct_college_deg, pct_wht, num_coffee_shops, current_year_housing_price)
-    #
+    if model:
+        print("Model loaded")
+    else:
+        print("Model load failed")
 
-    # return render_template('hello.html', error=error)
-    return input_values
+    input_array = np.array([pct_25_34, pct_college_deg, pct_wht, current_year_housing_price, num_coffee_shops])
+    prediction = model.predict(input_array.reshape(1, -1))
+
+    print(prediction)
+
+    return prediction
 
 
 if __name__ == "__main__":

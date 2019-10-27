@@ -143,7 +143,7 @@ d3.json(`/base_polygons`, function(data) {
           // let popup = L.popup()
           // .setLatLng(popLocation)
           // .setContent
-          let popupContent = '<form role="form" id="form" enctype="multipart/form-data" class = "form-horizontal" onsubmit="action=/model method="POST" action="/model"> {% csrf_token %}'+
+          let popupContent = '<form role="form" id="form" enctype="multipart/form-data" class = "form-horizontal" onsubmit="action=/model method="POST" action="model">'+
                         '<div class="form-group">'+
                             '<label class="control-label col-sm-5"><strong>Percent 25 - 34: </strong></label>'+
                             '<input type="number" min="0" value=' + '"' + pct_25_34 + '"' + 'class="form-control" id="pct_25_34" name="pct_25_34">'+
@@ -174,23 +174,11 @@ d3.json(`/base_polygons`, function(data) {
                       closeButton: true
                       }).openPopup();
 
-
           $(document).delegate('#form', 'click', function (event) {
             event.preventDefault();
             console.log("Submit button was clicked");
             var actionurl = event.currentTarget.action;
-
-            var csrf_token = "{{ csrf_token() }}";
-            $.ajaxSetup({
-              beforeSend: function(xhr, settings) {
-                if (!/^(GET|HEAD|OPTIONS|TRACE)$/i.test(settings.type) && !this.crossDomain) {
-                  xhr.setRequestHeader("X-CSRFToken", csrf_token);
-                }
-              }
-            });
-            var actionurl = event.currentTarget.action;
             console.log($("#form").serialize())
-            console.log(actionurl);
             $.ajax({
               url: actionurl,
               type: 'POST',
