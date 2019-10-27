@@ -121,6 +121,12 @@ def base_polygons():
 def predict():
     global model
     model = joblib.load('models/without_hist_scaled_model.pkl')
+
+    if model:
+        print("Model loaded")
+    else:
+        print("Model load failed")
+
     error = None
     if request.method == 'POST':
         user_input =  request.form
@@ -136,17 +142,13 @@ def predict():
         error = 'Invalid Credentials. Please try again.'
         print("POST request failure")
 
-    if model:
-        print("Model loaded")
-    else:
-        print("Model load failed")
-
     input_array = np.array([pct_25_34, pct_college_deg, pct_wht, current_year_housing_price, num_coffee_shops])
     prediction = model.predict(input_array.reshape(1, -1))
 
-    print(prediction)
 
-    return str(prediction)
+    print(prediction[0][0])
+
+    return jsonify(str(prediction[0][0]))
 
 
 if __name__ == "__main__":

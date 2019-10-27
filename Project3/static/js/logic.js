@@ -175,21 +175,28 @@ d3.json(`/base_polygons`, function(data) {
                       }).openPopup();
 
           $(document).delegate('#form', 'click', function (event) {
+            newMarker.closePopup()
+            map.setView([37.773972, -122.431297]);
             event.preventDefault();
-            console.log("Submit button was clicked");
-            var actionurl = event.currentTarget.action;
-            console.log($("#form").serialize())
+            let pct_25_34 = $("#pct_25_34").val();
+            let pct_college_deg = $("#pct_college_deg").val();
+            let pct_wht = $("#pct_wht").val();
+            let num_coffee_shops = $("#num_coffee_shops").val();
+            let current_year_housing_price = $("#current_year_housing_price").val();
+            let actionurl = event.currentTarget.action;
             $.ajax({
               url: actionurl,
               type: 'POST',
               dataType: 'application/json',
               data: $("#form").serialize(),
-              success: function(response) {
-                                // ... do something with the data...
-                console.log(response);
+              success: function (msg, status, jqXHR) {
+                let modelPrediction = msg.responseText;
+                console.log(modelPrediction);
               },
-              error: function(error) {
-                console.log(error);
+              error: function (msg, status, jqXHR) {
+                let modelPrediction = msg.responseText;
+                console.log(modelPrediction);
+                console.log(pct_25_34);
               }
             });
           });
@@ -233,3 +240,5 @@ let polygonOverlays = {"Zip Code Polygons": layers.ZIPCODE_POLYGONS};
 
 
 L.control.layers(baseMaps).addTo(map);
+////////////////////////////////////////////////////////////////////////////////
+// REQUEST THE DATA
