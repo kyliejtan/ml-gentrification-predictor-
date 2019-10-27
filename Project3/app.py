@@ -146,7 +146,7 @@ def predict():
 
     print(prediction)
 
-    return prediction
+    return str(prediction)
 
 
 if __name__ == "__main__":
