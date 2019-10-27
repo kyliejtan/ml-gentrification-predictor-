@@ -191,6 +191,7 @@ function map_builder(data) {
             let num_coffee_shops = $("#num_coffee_shops").val();
             let current_year_housing_price = $("#current_year_housing_price").val();
             let actionurl = event.currentTarget.action;
+            console.log(actionurl);
             $.ajax({
               url: actionurl,
               type: 'POST',
