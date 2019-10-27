@@ -119,6 +119,7 @@ def base_polygons():
 
 @app.route('/model', methods=["GET", "POST"])
 def predict():
+    global model
     model = joblib.load('../models/without_hist_scaled_model.pkl')
     error = None
     if request.method == 'POST':
