@@ -196,12 +196,14 @@ d3.json(`/base_polygons`, function(data) {
               type: 'POST',
               dataType: 'application/json',
               data: $("#form").serialize(),
-              success: function(data) {
+              success: function(response) {
                                 // ... do something with the data...
-                console.log(data);
-                            }
-                    });
-
+                console.log(response);
+              },
+              error: function(error) {
+                console.log(error);
+              }
+            });
           });
         }
       });
