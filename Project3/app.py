@@ -1,20 +1,38 @@
 # Importing dependencies
+import joblib
 import json
 import os
 import pandas as pd
 import numpy as np
 import psycopg2
 import sqlalchemy
+from boto.s3.connection import S3Connection
+from flask import Flask, jsonify, render_template, flash, request, url_for, redirect
+from flask_sqlalchemy import SQLAlchemy
+from flask_wtf import FlaskForm
+from wtforms import StringField
+from wtforms.validators import DataRequired
+from sklearn.linear_model import LinearRegression
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import mean_squared_error, r2_score
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
 from sqlalchemy.ext.automap import automap_base
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import Session
 from sqlalchemy import create_engine, extract, func, inspect
 from sqlalchemy import Column, Integer, Float, Date
-from flask import Flask, jsonify, render_template
-from flask_sqlalchemy import SQLAlchemy
-from boto.s3.connection import S3Connection
+
+class modelForm(FlaskForm):
+    pct_25_34 = StringField('pct_25_34', validators=[DataRequired()])
+    pct_college_deg = StringField('pct_college_deg', validators=[DataRequired()])
+    pct_wht = StringField('pct_wht', validators=[DataRequired()])
+    num_coffee_shops = StringField('num_coffee_shops', validators=[DataRequired()])
+    current_year_housing_price = StringField('current_year_housing_price', validators=[DataRequired()])
+
 
 app = Flask(__name__)
+# model = joblib.load("models/without_hist_scaled_model.pkl")
 
 #################################################
 # Database Setup
@@ -99,6 +117,29 @@ def base_polygons():
     choropleth_geojson_dict = {'type': 'FeatureCollection', 'features': choropleth_geojson_list}
     print(choropleth_geojson_dict)
     return jsonify(choropleth_geojson_dict)
+
+@app.route('/model', methods=["GET", "POST"])
+# def submit():
+#     form = modelForm()
+#     if form.validate_on_submit():
+#         return redirect('/success')
+#     return render_template('submit.html', form=form)
+def predict():
+    error = None
+    if request.method == 'POST':
+        pct_25_34 = request.form['pct_25_34']
+        pct_college_deg = request.form['pct_college_deg']
+        pct_wht = request.form['pct_wht']
+        num_coffee_shops = request.form['num_coffee_shops']
+        current_year_housing_price = request.form['current_year_housing_price']
+    else:
+        error = 'Invalid Credentials. Please try again.'
+
+    input_values = (pct_25_34, pct_college_deg, pct_wht, num_coffee_shops, current_year_housing_price)
+    #
+
+    # return render_template('hello.html', error=error)
+    return input_values
 
 
 if __name__ == "__main__":
