@@ -86,8 +86,8 @@ info.addTo(map);
 
 ////////////////////////////////////////////////////////////////////////////////
 // Grab data with d3
-d3.json(`/base_polygons`, function(data) {
-  // Create a new choropleth layer
+function map_builder(data) {
+  console.log(data);
   zipcode_polygon_map = L.choropleth(data, {
 
     // Define what  property in the features to use
@@ -110,6 +110,7 @@ d3.json(`/base_polygons`, function(data) {
 
     onEachFeature: function(feature, layer) {
       // Set mouse events to change map styling
+      let zip_code = layer.feature.properties.name
       let pct_25_34 = Math.round(layer.feature.properties.pct_25_34)
       let pct_college_deg = Math.round(layer.feature.properties.pct_college_deg)
       let pct_wht = Math.round(layer.feature.properties.pct_wht)
@@ -143,7 +144,11 @@ d3.json(`/base_polygons`, function(data) {
           // let popup = L.popup()
           // .setLatLng(popLocation)
           // .setContent
-          let popupContent = '<form role="form" id="form" enctype="multipart/form-data" class = "form-horizontal" onsubmit="action=/model method="POST" action="model">'+
+          let popupContent = '<div class="form-div">' + '<form role="form" id="form" enctype="multipart/form-data" class = "form-horizontal" onsubmit="action=/model method="POST" action="model">'+
+                        '<div class="form-group">'+
+                            '<label class="control-label col-sm-5"><strong>Zip code: </strong></label>'+
+                            '<input type="number" min="0" value=' + '"' + zip_code + '"' + 'class="form-control" id="zip_code" name="zip_code">'+
+                        '</div>'+
                         '<div class="form-group">'+
                             '<label class="control-label col-sm-5"><strong>Percent 25 - 34: </strong></label>'+
                             '<input type="number" min="0" value=' + '"' + pct_25_34 + '"' + 'class="form-control" id="pct_25_34" name="pct_25_34">'+
@@ -168,13 +173,15 @@ d3.json(`/base_polygons`, function(data) {
                           '<div style="text-align:center;" class="col-xs-4 col-xs-offset-2"><button type="button" class="btn">Cancel</button></div>'+
                           '<div style="text-align:center;" class="col-xs-4"><button type="submit" value="submit" class="btn btn-primary trigger-submit">Submit</button></div>'+
                         '</div>'+
-                        '</form>'
+                        '</form>' +
+                        '</div>'
           newMarker.bindPopup(popupContent,{
                       keepInView: true,
-                      closeButton: true
+                      closeButton: true,
+                      minWidth: 300
                       }).openPopup();
 
-          $(document).delegate('#form', 'click', function (event) {
+          $(document).delegate('#form', 'submit', function (event) {
             newMarker.closePopup()
             map.setView([37.773972, -122.431297]);
             event.preventDefault();
@@ -187,16 +194,16 @@ d3.json(`/base_polygons`, function(data) {
             $.ajax({
               url: actionurl,
               type: 'POST',
-              dataType: 'application/json',
+              dataType: 'JSON',
               data: $("#form").serialize(),
               success: function (msg, status, jqXHR) {
-                let modelPrediction = msg.responseText;
+                let modelPrediction = msg;
+                console.log("POST request success");
                 console.log(modelPrediction);
+                map_builder(modelPrediction)
               },
               error: function (msg, status, jqXHR) {
-                let modelPrediction = msg.responseText;
-                console.log(modelPrediction);
-                console.log(pct_25_34);
+                console.log("POST request failure");
               }
             });
           });
@@ -204,7 +211,6 @@ d3.json(`/base_polygons`, function(data) {
       });
     }
   })
-  //
   zipcode_polygon_map.addTo(layers["ZIPCODE_POLYGONS"]);
   //
   zipPolyLegend.onAdd = function() {
@@ -228,9 +234,15 @@ d3.json(`/base_polygons`, function(data) {
 
     return div;
   };
+
   // Adding legend to the map
   zipPolyLegend.addTo(map);
   zipcode_polygon_map.addTo(map)
+};
+d3.json(`/base_polygons`, function(data) {
+  // Create a new choropleth layer
+  map_builder(data)
+  //
 });
 
 ////////////////////////////////////////////////////////////////////////////////

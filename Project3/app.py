@@ -60,16 +60,15 @@ Base.prepare(db.engine, reflect=True)
 zipcode_neighborhoods = Base.classes.zipcode_neighborhoods
 zipcode_polygons = Base.classes.zipcode_polygons
 complete_ml_data = Base.classes.complete_ml_data
-# neighborhood_polygons = Base.classes.neighborhood_polygons
-# zipcode_polygons = Base.classes.zipcode_polygons
-# high_end_coffee_shops = Base.classes.high_end_coffee_shops
-# coffee_shops = Base.classes.coffee_shops
-# zillow_housing_data = Base.classes.zillow_housing_data
-# neighborhood_coffee_counts = Base.classes.neighborhood_coffee_counts
-# neighborhood_median_prices = Base.classes.neighborhood_median_prices
 
-# Initializing the index route so that when visited, the html template,
-# index.html will be visited
+sel = [zipcode_polygons, zipcode_neighborhoods, complete_ml_data]
+stmt = db.session.query(*sel).\
+    join(zipcode_neighborhoods, zipcode_polygons.features_properties_name == zipcode_neighborhoods.zip_code).\
+    join(complete_ml_data, zipcode_neighborhoods.zip_code == complete_ml_data.zip_code).\
+    filter(complete_ml_data.year == 2017).\
+    statement
+base_df = pd.read_sql_query(stmt, db.session.bind).reset_index(drop=True)
+
 @app.route("/")
 def index():
     """Return the homepage."""
@@ -130,13 +129,13 @@ def predict():
     error = None
     if request.method == 'POST':
         user_input =  request.form
+        zip_code = str(request.form['zip_code'])
         pct_25_34 = float(request.form['pct_25_34'])
         pct_college_deg = float(request.form['pct_college_deg'])
         pct_wht = float(request.form['pct_wht'])
         num_coffee_shops = float(request.form['num_coffee_shops'])
         current_year_housing_price = float(request.form['current_year_housing_price'])
         print("POST request successful")
-        print(type(pct_25_34))
 
     else:
         error = 'Invalid Credentials. Please try again.'
@@ -144,12 +143,43 @@ def predict():
 
     input_array = np.array([pct_25_34, pct_college_deg, pct_wht, current_year_housing_price, num_coffee_shops])
     prediction = model.predict(input_array.reshape(1, -1))
-
-
     print(prediction[0][0])
 
-    return jsonify(str(prediction[0][0]))
+    base_df.loc[base_df['features_properties_name'] == zip_code, 'pct_25_34'] = pct_25_34
+    base_df.loc[base_df['features_properties_name'] == zip_code, 'pct_college_deg'] = pct_college_deg
+    base_df.loc[base_df['features_properties_name'] == zip_code, 'pct_wht'] = pct_wht
+    base_df.loc[base_df['features_properties_name'] == zip_code, 'num_coffee_shops'] = num_coffee_shops
+    base_df.loc[base_df['features_properties_name'] == zip_code, 'current_year_housing_price'] = prediction[0][0]
 
+    choropleth_geojson_list = []
+    # Using a for loop to build each geojson feature
+    for row in base_df.iterrows():
+        id = row[1][0]
+        features_type = row[1][1]
+        features_properties_name = row[1][2]
+        features_geometry_type = row[1][3]
+        features_geometry_coordinates = row[1][4]
+        neighborhoods = row[1][6]
+        pct_wht = row[1][12]
+        pct_25_34 = row[1][13]
+        pct_college_deg = row[1][14]
+        num_coffee_shops = row[1][15]
+        current_year_housing_price = row[1][16]
+
+        choropleth_geojson_list.append({'type': features_type,
+            'geometry': {'type': features_geometry_type, 'coordinates': [[features_geometry_coordinates]]},
+                'properties': {'name': features_properties_name,
+                'current_year_housing_price': current_year_housing_price,
+                'neighborhoods': neighborhoods,
+                'num_coffee_shops': num_coffee_shops,
+                'pct_wht': pct_wht,
+                'pct_25_34': pct_25_34,
+                'pct_college_deg': pct_college_deg,
+                }})
+
+#
+    choropleth_geojson_dict = {'type': 'FeatureCollection', 'features': choropleth_geojson_list}
+    return jsonify(choropleth_geojson_dict)
 
 if __name__ == "__main__":
     app.run()
