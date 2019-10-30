@@ -21,4 +21,4 @@ We cleaned our data using several Jupyter notebooks and uploaded our desired tab
 
 Below is a simple flowchart graphically explaining the way our app functions from front to back, and back to front.
 
-![Project 2 App Flowchart](Project2/images/project_2_flowchart.png)
+![Project 3 App Flowchart](Project3/images/project_3_flowchart.png)

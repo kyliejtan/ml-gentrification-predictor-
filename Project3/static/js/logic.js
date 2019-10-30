@@ -20,7 +20,7 @@ let baseMaps = {
   "Dark Map": darkMap
 };
 
-let zipcode_polygon_map;
+let zipcodePolygonMap;
 
 // Creating map object
 let map = L.map("map", {
@@ -35,17 +35,6 @@ let featureGroup = L.featureGroup().addTo(map)
 let zipPolyLegend = L.control({ position: "bottomleft" });
 let selectionLegend = L.control({ position: "bottomright"});
 
-// map.on('baselayerchange', function(eventLayer) {
-//   if (eventLayer.name === 'Neighborhood Polygons') {
-//     neighborhoodPolyLegend.addTo(map);
-//     map.removeControl(zipPolyLegend);
-//     }
-//   else if (eventLayer.name === 'Zip Code Polygons') {
-//     zipPolyLegend.addTo(map);
-//     map.removeControl(neighborhoodPolyLegend);
-//     }
-// });
-///
 function updateSelectionLegend(layer) {
   info.update(layer.feature.properties);
 };
@@ -88,9 +77,9 @@ info.addTo(map);
 // Creating a function that will build the map. A function is being created so
 // that it can be called to update the map when the user submits values to the
 // model
-function map_builder(data) {
+function mapBuilder(data) {
   // Building the choropleth layer
-  zipcode_polygon_map = L.choropleth(data, {
+  zipcodePolygonMap = L.choropleth(data, {
 
     // Define what  property in the features to use
     valueProperty: "current_year_housing_price",
@@ -198,7 +187,7 @@ function map_builder(data) {
                 let modelPrediction = msg;
                 console.log("POST request success");
                 console.log(modelPrediction);
-                map_builder(modelPrediction)
+                mapBuilder(modelPrediction)
               },
               error: function (msg, status, jqXHR) {
                 console.log("POST request failure");
@@ -209,11 +198,11 @@ function map_builder(data) {
       });
     }
   })
-  zipcode_polygon_map.addTo(layers["ZIPCODE_POLYGONS"]);
+  zipcodePolygonMap.addTo(layers["ZIPCODE_POLYGONS"]);
   //
   zipPolyLegend.onAdd = function() {
-    let limits = zipcode_polygon_map.options.limits;
-    let colors = zipcode_polygon_map.options.colors;
+    let limits = zipcodePolygonMap.options.limits;
+    let colors = zipcodePolygonMap.options.colors;
     let labels = [];
 
     // Add min & max
@@ -235,11 +224,11 @@ function map_builder(data) {
 
   // Adding legend to the map
   zipPolyLegend.addTo(map);
-  zipcode_polygon_map.addTo(map)
+  zipcodePolygonMap.addTo(map)
 };
 d3.json(`/base_polygons`, function(data) {
   // Create a new choropleth layer
-  map_builder(data)
+  mapBuilder(data)
   //
 });
 //
