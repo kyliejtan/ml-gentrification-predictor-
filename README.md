@@ -1,7 +1,7 @@
-# Project-2 Do coffee shops mean gentrification?
-*By Quynh Nhu Bui, Kylie Tan, Michael Boese, and Bani Vafa*
+# Project-3 Using demographics and coffee shops to predict future housing prices
+*By Kylie Tan, Quynh Nhu Bui, Michael Boese, and Bani Vafa*
 
-APP URL: https://nameless-forest-48252.herokuapp.com/
+APP URL: https://sleepy-badlands-55454.herokuapp.com/
 
 The purpose of this project was to create an engaging full-stack, app-driven,  visualization of the results of an inquest into a topic we feel passionate about.
 

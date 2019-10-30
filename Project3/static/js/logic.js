@@ -85,9 +85,11 @@ info.addTo(map);
 ////////////////////////////////////////////////////////////////////////////////
 
 ////////////////////////////////////////////////////////////////////////////////
-// Grab data with d3
+// Creating a function that will build the map. A function is being created so
+// that it can be called to update the map when the user submits values to the
+// model
 function map_builder(data) {
-  console.log(data);
+  // Building the choropleth layer
   zipcode_polygon_map = L.choropleth(data, {
 
     // Define what  property in the features to use
@@ -107,7 +109,7 @@ function map_builder(data) {
       weight: 1,
       fillOpacity: 0.8
     },
-
+    // Setting values and behaviors for each feature
     onEachFeature: function(feature, layer) {
       // Set mouse events to change map styling
       let zip_code = layer.feature.properties.name
@@ -117,9 +119,8 @@ function map_builder(data) {
       let num_coffee_shops = Math.round(layer.feature.properties.num_coffee_shops)
       let current_year_housing_price = Math.round(layer.feature.properties.current_year_housing_price)
       let newMarker
-
+      // Setting mouse behaviors for each feature
       layer.on({
-
         // When a user's mouse touches a map feature, the mouseover event calls this function, that feature's opacity changes to 90% so that it stands out
         mouseover: function(event) {
           layer = event.target;
@@ -136,14 +137,10 @@ function map_builder(data) {
           });
         },
         // When a feature (neighborhood) is clicked, it is enlarged to fit the screen
-
         click: function(event) {
           layer = event.target
           newMarker = new L.marker(event.latlng).addTo(map);
           let popLocation= event.latlng;
-          // let popup = L.popup()
-          // .setLatLng(popLocation)
-          // .setContent
           let popupContent = '<div class="form-div">' + '<form role="form" id="form" enctype="multipart/form-data" class = "form-horizontal" onsubmit="action=/model method="POST" action="model">'+
                         '<div class="form-group">'+
                             '<label class="control-label col-sm-5"><strong>Zip code: </strong></label>'+
@@ -245,13 +242,6 @@ d3.json(`/base_polygons`, function(data) {
   map_builder(data)
   //
 });
-
-////////////////////////////////////////////////////////////////////////////////
-
-////////////////////////////////////////////////////////////////////////////////
+//
 let polygonOverlays = {"Zip Code Polygons": layers.ZIPCODE_POLYGONS};
-
-
 L.control.layers(baseMaps).addTo(map);
-////////////////////////////////////////////////////////////////////////////////
-// REQUEST THE DATA
