@@ -119,7 +119,7 @@ def base_polygons():
 @app.route('/model', methods=["GET", "POST"])
 def predict():
     global model
-    model = joblib.load('../models/Final_model.pkl')
+    model = joblib.load('models/Final_model.pkl')
 
     if model:
         print("Model loaded")
