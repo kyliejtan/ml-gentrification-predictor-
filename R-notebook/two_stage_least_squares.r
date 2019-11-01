@@ -51,7 +51,6 @@ Coefficients:
     (Intercept)             yhat          pct_wht  pct_college_deg
         -104374           124245             7620               NA
 
-> ?lm
 > final_reg.coefficientsa
 Error: object 'final_reg.coefficientsa' not found
 > final_reg.coefficients
@@ -73,4 +72,4 @@ Error: object 'final_reg.coefficients' not found
 +               pct_wht, data = other_hist_complete_data)
 > reg2$coefficients
      (Intercept) num_coffee_shops          pct_wht  pct_college_deg
-     208199.2971      -12169.3444        -407.9279       17071.5937 
+     208199.2971      -12169.3444        -407.9279       17071.5937
