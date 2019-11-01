@@ -21,3 +21,5 @@ Our vision for this project was to create an app that would be able to take user
 The flowchart below explains how the front and backends of our app functions.
 
 ![Project 3 App Flowchart](Project3/images/Project_3_Flowchart.png)
+
+For more information about our project, please visit https://kylietan.github.io/Project-3/
