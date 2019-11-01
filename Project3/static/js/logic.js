@@ -156,6 +156,7 @@ function mapBuilder(data) {
                             '<input type="number" min="0" value=' + '"' + current_year_housing_price + '"' + 'class="form-control" id="current_year_housing_price" name="current_year_housing_price">'+
                         '</div>'+
                         '<div class="form-group">'+
+                          '<div style="text-align:center;" class="col-xs-4 col-xs-offset-2"><button type="button" class="btn">Cancel</button></div>'+
                           '<div style="text-align:center;" class="col-xs-4"><button type="submit" value="submit" class="btn btn-primary trigger-submit">Submit</button></div>'+
                         '</div>'+
                         '</form>' +
