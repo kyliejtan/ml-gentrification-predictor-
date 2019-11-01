@@ -17,6 +17,7 @@ In the course of their paper, the authors identify three demographic indicators 
 ## App Design
 
 Our vision for this project was to create an app that would be able to take user-inputted values for the three demographic features, the number of coffee shops in a given neighborhood and the current year's median home sale price and through the use of an embedded machine learning model, predict the next year's median home sale price.
-![Project 3 App Flowchart](Project3/images/Project_3_Flowchart.png)
 
-## Data Collection
+The flowchart below explains how the front and backends of our app functions.
+
+![Project 3 App Flowchart](Project3/images/Project_3_Flowchart.png)
