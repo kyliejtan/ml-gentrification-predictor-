@@ -3,11 +3,12 @@
 
 APP URL: https://sleepy-badlands-55454.herokuapp.com/
 
-The purpose of this project was to create an engaging full-stack, app-driven,  visualization of the results of an inquest into a topic we feel passionate about.
+The purpose of this project was to train a machine learning model with data we strategically collected in order to try to predict the future outcomes of a topic we felt passionate about.
 
-As members of one of the groups of people who are often to blame for the gentrification of countless neighborhoods across the United States, we felt compelled to learn more about how gentrification impacts the neighborhoods it acts upon.
+With questions still left unanswered from a previous project (https://github.com/kylietan/Project-2) in which we visually investigated the potential connection between trendy coffee houses and gentrifying neighborhoods by overlaying the retail locations of six of the Bay Area's largest second and third wave coffee retailers over choropleth polygons representing the neighborhoods of San Francisco, color-weighted by median housing price, we decided to dig deeper into this relationship with the help of machine learning.
 
-A sentiment that most of us have heard echoed in conversations about gentrification is that it leaves hipsters and hipster coffee shops in its wake after it has pushed out long-time mom-and-pop businesses. Our goal for this project was to create a visualization that will serve as the starting point in our quest to better understand, and visualize this sentiment. To do that, we overlay the locations of coffee shops belonging to six of the largest purveyors of second and third wave coffee in San Francisco over two toggleable choropleth polygons layers which representing individual San Francisco neighborhoods whose color values correspond to the median housing price of the neighborhood, or the zip codes that comprise all of San Francisco above Daly City, whose polygons are weighted by the percent rate of change in home costs between the years 2014 and 2019 for the zip code containing the Financial District (due to a shorter dataset), and 1996 to 2019 for all the other included zip codes.
+While conducting a literature review for our previous project, we came across a working paper titled "Nowcasting Gentrification: Using Yelp Data to Quantify Neighborhood Change", by Edward L. Glaeser, Hyunjin Kim, and Michael Luca of the Harvard School of Business (https://www.hbs.edu/faculty/Publication%20Files/18-077_a0e9e3c7-eceb-4685-8d72-21e0f518b3f3.pdf). In this paper, the authors investigated how data from an array of digital platforms "have the potential to improve our understanding of gentrification and enable new measures of how neighborhoods change in close to real time."
+
 
 ![Project 3 Map Screenshot](Project3/images/map_page.png)
 
