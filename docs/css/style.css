@@ -7,9 +7,9 @@ body{
 	padding-right: 12px;
 	padding-left: 12px;
 }
-.navbar-brand {
+/* .navbar-brand {
 	font-family: Nunito;
-}
+} */
 .nav-link.active{
 	background-color: lightgrey !important;
 }
@@ -60,7 +60,7 @@ body{
 }
 
 @media screen and (max-width : 506px){
- 
+
  .only-mobile{
   visibility:visible;
   }
@@ -103,9 +103,8 @@ footer{
 	height: 850px;
 	width: 100%;
   }
-  
+
   .carousel img {
 	height: 700px;
 	width:auto;
   }
-  
