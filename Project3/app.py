@@ -41,7 +41,7 @@ app = Flask(__name__)
 db_uri = os.environ.get('DATABASE_URL')
 api_key = os.environ.get('API_KEY')
 
-app.config["SQLALCHEMY_DATABASE_URI"] = 'postgres://fammaobqzbflly:e32d1aa0abf664a50cae846d82c61500d67069725e2a0471e4a01b93f123a932@ec2-54-221-212-126.compute-1.amazonaws.com:5432/d4t5jnp7det55m'
+app.config["SQLALCHEMY_DATABASE_URI"] = db_uri
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 # # Binding the instance of flask_sqlalchemy.SQLAlchemy to this specific flask app
 db = SQLAlchemy(app)
