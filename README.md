@@ -1,9 +1,6 @@
 # Project-3 Using demographics and coffee shops to predict future housing prices
-<<<<<<< HEAD
+
 *By Kylie Tan, Quynh Nhu Bui, Michael Boese, Bani Vafa, and Adam Dunbar*
-=======
-*By Kylie Tan, Quynh Nhu Bui, Michael Boese, Adam Dunbar and Bani Vafa*
->>>>>>> 07d66ca0aaed9cf8757326fdef8b6e7cf625bc70
 
 ![Project 3 Map Screenshot](Project3/images/map_page.png)
 APP URL: https://sleepy-badlands-55454.herokuapp.com/
