@@ -1,1 +1,1 @@
-web: gunicorn Project3.app:app
+web: gunicorn sf_housing_price_prediction_app.app:app
